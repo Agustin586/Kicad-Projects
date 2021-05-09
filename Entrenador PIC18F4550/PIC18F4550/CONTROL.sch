@@ -1,0 +1,464 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_PIC18:PIC18F4550-IP U2
+U 1 1 5F3220DC
+P 5800 3550
+F 0 "U2" H 5800 5131 50  0000 C CNN
+F 1 "PIC18F4550-IP" H 5800 5040 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 5800 3750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/39760d.pdf" H 5800 3300 50  0001 C CNN
+	1    5800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4950 5750 4950
+Text GLabel 5750 1800 1    50   Input ~ 0
+5V
+Wire Wire Line
+	5750 1800 5750 2150
+Wire Wire Line
+	5700 2150 5750 2150
+Connection ~ 5750 2150
+Wire Wire Line
+	5750 2150 5800 2150
+$Comp
+L power:GND #PWR06
+U 1 1 5F3243C8
+P 5750 5100
+F 0 "#PWR06" H 5750 4850 50  0001 C CNN
+F 1 "GND" H 5755 4927 50  0000 C CNN
+F 2 "" H 5750 5100 50  0001 C CNN
+F 3 "" H 5750 5100 50  0001 C CNN
+	1    5750 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 5100 5750 4950
+Connection ~ 5750 4950
+Wire Wire Line
+	5750 4950 5800 4950
+Wire Wire Line
+	4350 2450 4700 2450
+Wire Wire Line
+	4350 2550 4700 2550
+Wire Wire Line
+	4350 2650 4700 2650
+Wire Wire Line
+	4350 2750 4700 2750
+Wire Wire Line
+	4350 2850 4700 2850
+Wire Wire Line
+	4350 2950 4700 2950
+$Comp
+L Connector:Screw_Terminal_01x08 J6
+U 1 1 5F32BCBA
+P 4150 3750
+F 0 "J6" V 4400 3750 50  0000 C CNN
+F 1 "Screw_Terminal_01x08" V 4300 3700 50  0000 C CNN
+F 2 "" H 4150 3750 50  0001 C CNN
+F 3 "~" H 4150 3750 50  0001 C CNN
+	1    4150 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3450 4700 3450
+Wire Wire Line
+	4350 3550 4700 3550
+Wire Wire Line
+	4350 3650 4700 3650
+Wire Wire Line
+	4350 3750 4700 3750
+Wire Wire Line
+	4350 3850 4700 3850
+Wire Wire Line
+	4350 3950 4700 3950
+Wire Wire Line
+	4350 4050 4550 4050
+Wire Wire Line
+	4350 4150 4400 4150
+$Comp
+L Device:Crystal Y1
+U 1 1 5F32FCB3
+P 2150 3000
+F 0 "Y1" H 2150 2732 50  0000 C CNN
+F 1 "Crystal" H 2150 2823 50  0000 C CNN
+F 2 "" H 2150 3000 50  0001 C CNN
+F 3 "~" H 2150 3000 50  0001 C CNN
+	1    2150 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x06 J3
+U 1 1 5F330A40
+P 4150 2650
+F 0 "J3" V 4350 2650 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" V 4250 2600 50  0000 C CNN
+F 2 "" H 4150 2650 50  0001 C CNN
+F 3 "~" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F3324DD
+P 1750 3150
+F 0 "C3" H 1865 3196 50  0000 L CNN
+F 1 "15pf" H 1865 3105 50  0000 L CNN
+F 2 "" H 1788 3000 50  0001 C CNN
+F 3 "~" H 1750 3150 50  0001 C CNN
+	1    1750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5F332CF4
+P 2550 3150
+F 0 "C4" H 2665 3196 50  0000 L CNN
+F 1 "15pf" H 2665 3105 50  0000 L CNN
+F 2 "" H 2588 3000 50  0001 C CNN
+F 3 "~" H 2550 3150 50  0001 C CNN
+	1    2550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3000 2300 3000
+Wire Wire Line
+	2000 3000 1750 3000
+Wire Wire Line
+	1750 3300 2150 3300
+$Comp
+L power:GND #PWR04
+U 1 1 5F3341D4
+P 2150 3400
+F 0 "#PWR04" H 2150 3150 50  0001 C CNN
+F 1 "GND" H 2155 3227 50  0000 C CNN
+F 2 "" H 2150 3400 50  0001 C CNN
+F 3 "" H 2150 3400 50  0001 C CNN
+	1    2150 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 3400 2150 3300
+Connection ~ 2150 3300
+Wire Wire Line
+	2150 3300 2550 3300
+Text Label 1750 2850 1    50   ~ 0
+OSC1
+Wire Wire Line
+	1750 2850 1750 3000
+Connection ~ 1750 3000
+Text Label 2550 2850 1    50   ~ 0
+OSC2
+Wire Wire Line
+	2550 2850 2550 3000
+Connection ~ 2550 3000
+Text Label 4600 3250 2    50   ~ 0
+OSC1
+Wire Wire Line
+	4600 3250 4700 3250
+Text Label 4600 3050 2    50   ~ 0
+OSC2
+Wire Wire Line
+	4600 3050 4700 3050
+$Comp
+L Connector:Screw_Terminal_01x08 J7
+U 1 1 5F33B848
+P 7500 3750
+F 0 "J7" V 7700 3700 50  0000 L CNN
+F 1 "Screw_Terminal_01x08" V 7600 3300 50  0000 L CNN
+F 2 "" H 7500 3750 50  0001 C CNN
+F 3 "~" H 7500 3750 50  0001 C CNN
+	1    7500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3450 6900 3450
+Wire Wire Line
+	7300 3550 6900 3550
+Wire Wire Line
+	7300 3650 6900 3650
+Wire Wire Line
+	7300 3750 6900 3750
+Wire Wire Line
+	7300 3850 6900 3850
+Wire Wire Line
+	7300 3950 6900 3950
+Wire Wire Line
+	7300 4050 6900 4050
+Wire Wire Line
+	7300 4150 6900 4150
+Wire Wire Line
+	7300 4550 6900 4550
+Wire Wire Line
+	7300 4450 6900 4450
+Wire Wire Line
+	7300 4350 6900 4350
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F34DCE3
+P 10050 3400
+F 0 "SW1" V 10096 3352 50  0000 R CNN
+F 1 "RESET" V 10005 3352 50  0000 R CNN
+F 2 "" H 10050 3600 50  0001 C CNN
+F 3 "~" H 10050 3600 50  0001 C CNN
+	1    10050 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F34EA78
+P 10050 2950
+F 0 "R1" H 10120 2996 50  0000 L CNN
+F 1 "10K" H 10120 2905 50  0000 L CNN
+F 2 "" V 9980 2950 50  0001 C CNN
+F 3 "~" H 10050 2950 50  0001 C CNN
+	1    10050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3100 10050 3150
+$Comp
+L power:GND #PWR05
+U 1 1 5F350039
+P 10050 3700
+F 0 "#PWR05" H 10050 3450 50  0001 C CNN
+F 1 "GND" H 10055 3527 50  0000 C CNN
+F 2 "" H 10050 3700 50  0001 C CNN
+F 3 "" H 10050 3700 50  0001 C CNN
+	1    10050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3700 10050 3600
+Text GLabel 10050 2700 1    50   Input ~ 0
+5V
+Wire Wire Line
+	10050 2700 10050 2800
+Text Label 9850 3150 2    50   ~ 0
+RESET
+Wire Wire Line
+	9850 3150 10050 3150
+Connection ~ 10050 3150
+Wire Wire Line
+	10050 3150 10050 3200
+Text Label 7300 4750 2    50   ~ 0
+RESET
+Text Label 7300 4950 2    50   ~ 0
+MCLR
+$Comp
+L Connector:Screw_Terminal_01x03 J8
+U 1 1 5F35A357
+P 7500 4450
+F 0 "J8" H 7580 4492 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7580 4401 50  0000 L CNN
+F 2 "" H 7500 4450 50  0001 C CNN
+F 3 "~" H 7500 4450 50  0001 C CNN
+	1    7500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J9
+U 1 1 5F35ABEA
+P 7500 4850
+F 0 "J9" H 7580 4892 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7580 4801 50  0000 L CNN
+F 2 "" H 7500 4850 50  0001 C CNN
+F 3 "~" H 7500 4850 50  0001 C CNN
+	1    7500 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4650 6900 4850
+Wire Wire Line
+	6900 4850 7300 4850
+$Comp
+L Connector:Screw_Terminal_01x07 J4
+U 1 1 5F35D0A7
+P 7500 2750
+F 0 "J4" H 7580 2792 50  0000 L CNN
+F 1 "Screw_Terminal_01x07" H 7580 2701 50  0000 L CNN
+F 2 "" H 7500 2750 50  0001 C CNN
+F 3 "~" H 7500 2750 50  0001 C CNN
+	1    7500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2450 6900 2450
+Wire Wire Line
+	7300 2550 6900 2550
+Wire Wire Line
+	7300 2650 6900 2650
+Wire Wire Line
+	7300 2750 7050 2750
+Wire Wire Line
+	7300 2850 7200 2850
+Wire Wire Line
+	7300 2950 6900 2950
+Wire Wire Line
+	7300 3050 6900 3050
+$Comp
+L Connector:Screw_Terminal_01x05 J5
+U 1 1 5F365ABC
+P 10050 1800
+F 0 "J5" V 10250 1750 50  0000 L CNN
+F 1 "PICKIT" V 10150 1650 50  0000 L CNN
+F 2 "" H 10050 1800 50  0001 C CNN
+F 3 "~" H 10050 1800 50  0001 C CNN
+	1    10050 1800
+	1    0    0    1   
+$EndComp
+Text Label 9700 2000 2    50   ~ 0
+MCLR
+Wire Wire Line
+	9700 2000 9850 2000
+Text GLabel 9700 1900 0    50   Input ~ 0
+5V
+Wire Wire Line
+	9700 1900 9850 1900
+$Comp
+L power:GND #PWR03
+U 1 1 5F36E11B
+P 9700 1800
+F 0 "#PWR03" H 9700 1550 50  0001 C CNN
+F 1 "GND" V 9705 1672 50  0000 R CNN
+F 2 "" H 9700 1800 50  0001 C CNN
+F 3 "" H 9700 1800 50  0001 C CNN
+	1    9700 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9700 1800 9850 1800
+Text Label 9700 1700 2    50   ~ 0
+PGD
+Text Label 9700 1600 2    50   ~ 0
+PGC
+Wire Wire Line
+	9700 1700 9850 1700
+Wire Wire Line
+	9700 1600 9850 1600
+Text Label 4250 4300 2    50   ~ 0
+PGD
+Wire Wire Line
+	4250 4300 4400 4300
+Wire Wire Line
+	4400 4300 4400 4150
+Connection ~ 4400 4150
+Wire Wire Line
+	4400 4150 4700 4150
+Text Label 4250 4450 2    50   ~ 0
+PGC
+Wire Wire Line
+	4250 4450 4550 4450
+Wire Wire Line
+	4550 4450 4550 4050
+Connection ~ 4550 4050
+Wire Wire Line
+	4550 4050 4700 4050
+Wire Notes Line
+	1350 3700 3000 3700
+Wire Notes Line
+	3000 3700 3000 2500
+Wire Notes Line
+	3000 2500 1350 2500
+Wire Notes Line
+	1350 2500 1350 3700
+Wire Notes Line
+	9350 2350 10500 2350
+Wire Notes Line
+	10500 2350 10500 1300
+Wire Notes Line
+	10500 1300 9350 1300
+Wire Notes Line
+	9350 1300 9350 2350
+Wire Notes Line
+	10500 2450 10500 3950
+Wire Notes Line
+	10500 3950 9350 3950
+Wire Notes Line
+	9350 3950 9350 2450
+Wire Notes Line
+	9350 2450 10500 2450
+Text Notes 1400 2600 0    50   ~ 0
+OSCILADOR\n
+Text Notes 9400 2550 0    50   ~ 0
+RESET\n
+Text Notes 9400 1400 0    50   ~ 0
+PICKIT
+$Comp
+L Connector:USB_B J?
+U 1 1 5F38FFC4
+P 10000 4700
+F 0 "J?" H 10057 5167 50  0000 C CNN
+F 1 "USB_B" H 10057 5076 50  0000 C CNN
+F 2 "" H 10150 4650 50  0001 C CNN
+F 3 " ~" H 10150 4650 50  0001 C CNN
+	1    10000 4700
+	1    0    0    -1  
+$EndComp
+Text Label 10400 4500 0    50   ~ 0
+VBUS
+Text Label 10400 4700 0    50   ~ 0
+D+
+Wire Wire Line
+	10400 4700 10300 4700
+Text Label 10400 4800 0    50   ~ 0
+D-
+Wire Wire Line
+	10400 4800 10300 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5F396359
+P 10000 5200
+F 0 "#PWR?" H 10000 4950 50  0001 C CNN
+F 1 "GND" H 10005 5027 50  0000 C CNN
+F 2 "" H 10000 5200 50  0001 C CNN
+F 3 "" H 10000 5200 50  0001 C CNN
+	1    10000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5200 10000 5100
+Wire Notes Line
+	9350 5450 10700 5450
+Wire Notes Line
+	10700 5450 10700 4100
+Wire Notes Line
+	10700 4100 9350 4100
+Wire Notes Line
+	9350 4100 9350 5450
+Text Notes 9400 4200 0    50   ~ 0
+CONEXION USB
+Text Label 7450 2300 0    50   ~ 0
+D+
+Wire Wire Line
+	7450 2300 7200 2300
+Wire Wire Line
+	7200 2300 7200 2850
+Connection ~ 7200 2850
+Wire Wire Line
+	7200 2850 6900 2850
+Text Label 7450 2150 0    50   ~ 0
+D-
+Wire Wire Line
+	7450 2150 7050 2150
+Wire Wire Line
+	7050 2150 7050 2750
+Connection ~ 7050 2750
+Wire Wire Line
+	7050 2750 6900 2750
+NoConn ~ 9900 5100
+$EndSCHEMATC
