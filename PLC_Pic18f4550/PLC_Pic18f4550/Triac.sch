@@ -1,0 +1,622 @@
+EESchema Schematic File Version 4
+LIBS:PLC_Pic18f4550-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay_SolidState:MOC3021M U?
+U 1 1 60EA64E6
+P 1950 5100
+AR Path="/60BE07A1/60CFA239/60EA64E6" Ref="U?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA64E6" Ref="U12"  Part="1" 
+F 0 "U12" H 1950 5425 50  0000 C CNN
+F 1 "MOC3021M" H 1950 5334 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm_LongPads" H 1750 4900 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf" H 1925 5100 50  0001 L CNN
+	1    1950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EA64EC
+P 1400 5000
+AR Path="/60BE0660/60EA64EC" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA64EC" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA64EC" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA64EC" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA64EC" Ref="R21"  Part="1" 
+F 0 "R21" V 1193 5000 50  0000 C CNN
+F 1 "R" V 1284 5000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1330 5000 50  0001 C CNN
+F 3 "~" H 1400 5000 50  0001 C CNN
+	1    1400 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 5000 1550 5000
+Text GLabel 1100 4550 1    50   Input ~ 0
+Q1.0
+Wire Wire Line
+	1100 4550 1100 5000
+Wire Wire Line
+	1100 5000 1250 5000
+$Comp
+L Device:LED D?
+U 1 1 60EA64F6
+P 1450 5400
+AR Path="/60BE0660/60EA64F6" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60EA64F6" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60EA64F6" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA64F6" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA64F6" Ref="D18"  Part="1" 
+F 0 "D18" V 1489 5283 50  0000 R CNN
+F 1 "LED" V 1398 5283 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1450 5400 50  0001 C CNN
+F 3 "~" H 1450 5400 50  0001 C CNN
+	1    1450 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EA64FC
+P 1450 5650
+AR Path="/60BE0660/60EA64FC" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60EA64FC" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60EA64FC" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA64FC" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA64FC" Ref="#PWR050"  Part="1" 
+F 0 "#PWR050" H 1450 5400 50  0001 C CNN
+F 1 "GND" H 1455 5477 50  0000 C CNN
+F 2 "" H 1450 5650 50  0001 C CNN
+F 3 "" H 1450 5650 50  0001 C CNN
+	1    1450 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5650 1450 5550
+Wire Wire Line
+	1450 5250 1450 5200
+Wire Wire Line
+	1450 5200 1650 5200
+$Comp
+L Device:R R?
+U 1 1 60EA6505
+P 2650 4850
+AR Path="/60BE0660/60EA6505" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA6505" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA6505" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA6505" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA6505" Ref="R26"  Part="1" 
+F 0 "R26" V 2443 4850 50  0000 C CNN
+F 1 "R" V 2534 4850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2580 4850 50  0001 C CNN
+F 3 "~" H 2650 4850 50  0001 C CNN
+	1    2650 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Triac_Thyristor:BT136-500 Q?
+U 1 1 60EA650B
+P 3000 5100
+AR Path="/60BE07A1/60CFA239/60EA650B" Ref="Q?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA650B" Ref="Q10"  Part="1" 
+F 0 "Q10" H 3128 5146 50  0000 L CNN
+F 1 "BT136-500" H 3128 5055 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3200 5025 50  0001 L CIN
+F 3 "http://www.micropik.com/PDF/BT136-600.pdf" H 3000 5100 50  0001 L CNN
+	1    3000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4950 3000 4850
+Wire Wire Line
+	3000 4850 2800 4850
+Wire Wire Line
+	2500 4850 2350 4850
+Wire Wire Line
+	2350 4850 2350 5000
+Wire Wire Line
+	2350 5000 2250 5000
+Wire Wire Line
+	2850 5200 2250 5200
+Text Label 3100 4850 0    50   ~ 0
+Ac1
+$Comp
+L Device:D_Bridge_+A-A D?
+U 1 1 60EA652B
+P 1450 6500
+AR Path="/60BE07A1/60CFA239/60EA652B" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA652B" Ref="D19"  Part="1" 
+F 0 "D19" H 1500 7100 50  0000 R CNN
+F 1 "D_Bridge_+A-A" H 1750 7200 50  0000 R CNN
+F 2 "Diode_THT:Diode_Bridge_Round_D9.0mm" H 1450 6500 50  0001 C CNN
+F 3 "~" H 1450 6500 50  0001 C CNN
+	1    1450 6500
+	-1   0    0    1   
+$EndComp
+Text Label 1450 6100 0    50   ~ 0
+Ac1
+Wire Wire Line
+	1450 6100 1450 6200
+Text Label 1450 6900 3    50   ~ 0
+Ac2
+Wire Wire Line
+	1450 6900 1450 6800
+$Comp
+L Isolator:PC817 U?
+U 1 1 60EA6535
+P 3000 6600
+AR Path="/60BE0660/60EA6535" Ref="U?"  Part="1" 
+AR Path="/60BE08C7/60EA6535" Ref="U?"  Part="1" 
+AR Path="/60BE07A1/60EA6535" Ref="U?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA6535" Ref="U?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA6535" Ref="U14"  Part="1" 
+F 0 "U14" H 3000 6925 50  0000 C CNN
+F 1 "PC817" H 3000 6834 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 2800 6400 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3000 6600 50  0001 L CNN
+	1    3000 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EA653B
+P 2050 6500
+AR Path="/60BE0660/60EA653B" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA653B" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA653B" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA653B" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA653B" Ref="R23"  Part="1" 
+F 0 "R23" V 1843 6500 50  0000 C CNN
+F 1 "R" V 1934 6500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1980 6500 50  0001 C CNN
+F 3 "~" H 2050 6500 50  0001 C CNN
+	1    2050 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EA6541
+P 2400 6500
+AR Path="/60BE0660/60EA6541" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA6541" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA6541" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA6541" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA6541" Ref="R24"  Part="1" 
+F 0 "R24" V 2193 6500 50  0000 C CNN
+F 1 "R" V 2284 6500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2330 6500 50  0001 C CNN
+F 3 "~" H 2400 6500 50  0001 C CNN
+	1    2400 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 6500 2200 6500
+Wire Wire Line
+	2550 6500 2700 6500
+Wire Wire Line
+	1150 6500 1150 5950
+Wire Wire Line
+	1150 5950 1900 5950
+Wire Wire Line
+	1900 5950 1900 6500
+Wire Wire Line
+	1750 6500 1750 6700
+Wire Wire Line
+	1750 6700 2700 6700
+$Comp
+L Device:R R?
+U 1 1 60EA654E
+P 3500 6300
+AR Path="/60BE0660/60EA654E" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA654E" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA654E" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA654E" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA654E" Ref="R28"  Part="1" 
+F 0 "R28" H 3430 6254 50  0000 R CNN
+F 1 "R" H 3430 6345 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3430 6300 50  0001 C CNN
+F 3 "~" H 3500 6300 50  0001 C CNN
+	1    3500 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 6450 3500 6500
+Wire Wire Line
+	3500 6500 3300 6500
+$Comp
+L power:+5V #PWR?
+U 1 1 60EA6556
+P 3500 6050
+AR Path="/60BE0660/60EA6556" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60EA6556" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60EA6556" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA6556" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA6556" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 3500 5900 50  0001 C CNN
+F 1 "+5V" H 3515 6223 50  0000 C CNN
+F 2 "" H 3500 6050 50  0001 C CNN
+F 3 "" H 3500 6050 50  0001 C CNN
+	1    3500 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6050 3500 6150
+$Comp
+L power:GND #PWR?
+U 1 1 60EA655D
+P 3500 6750
+AR Path="/60BE0660/60EA655D" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60EA655D" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60EA655D" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA655D" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA655D" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 3500 6500 50  0001 C CNN
+F 1 "GND" H 3505 6577 50  0000 C CNN
+F 2 "" H 3500 6750 50  0001 C CNN
+F 3 "" H 3500 6750 50  0001 C CNN
+	1    3500 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6750 3500 6700
+Wire Wire Line
+	3500 6700 3300 6700
+Text GLabel 3750 6500 2    50   Input ~ 0
+CxC
+Wire Wire Line
+	3750 6500 3500 6500
+Connection ~ 3500 6500
+$Comp
+L Relay_SolidState:MOC3021M U?
+U 1 1 60EA6568
+P 2000 1700
+AR Path="/60BE07A1/60CFA239/60EA6568" Ref="U?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA6568" Ref="U13"  Part="1" 
+F 0 "U13" H 2000 2025 50  0000 C CNN
+F 1 "MOC3021M" H 2000 1934 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm_LongPads" H 1800 1500 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf" H 1975 1700 50  0001 L CNN
+	1    2000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EA656E
+P 1450 1600
+AR Path="/60BE0660/60EA656E" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA656E" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA656E" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA656E" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA656E" Ref="R22"  Part="1" 
+F 0 "R22" V 1243 1600 50  0000 C CNN
+F 1 "R" V 1334 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1380 1600 50  0001 C CNN
+F 3 "~" H 1450 1600 50  0001 C CNN
+	1    1450 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 1600 1600 1600
+Text GLabel 1150 1150 1    50   Input ~ 0
+Q1.1
+Wire Wire Line
+	1150 1150 1150 1600
+Wire Wire Line
+	1150 1600 1300 1600
+$Comp
+L Device:LED D?
+U 1 1 60EA6578
+P 1500 2000
+AR Path="/60BE0660/60EA6578" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60EA6578" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60EA6578" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA6578" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA6578" Ref="D20"  Part="1" 
+F 0 "D20" V 1539 1883 50  0000 R CNN
+F 1 "LED" V 1448 1883 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1500 2000 50  0001 C CNN
+F 3 "~" H 1500 2000 50  0001 C CNN
+	1    1500 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EA657E
+P 1500 2250
+AR Path="/60BE0660/60EA657E" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60EA657E" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60EA657E" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA657E" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA657E" Ref="#PWR051"  Part="1" 
+F 0 "#PWR051" H 1500 2000 50  0001 C CNN
+F 1 "GND" H 1505 2077 50  0000 C CNN
+F 2 "" H 1500 2250 50  0001 C CNN
+F 3 "" H 1500 2250 50  0001 C CNN
+	1    1500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2250 1500 2150
+Wire Wire Line
+	1500 1850 1500 1800
+Wire Wire Line
+	1500 1800 1700 1800
+$Comp
+L Device:R R?
+U 1 1 60EA6587
+P 2700 1450
+AR Path="/60BE0660/60EA6587" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA6587" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA6587" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA6587" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA6587" Ref="R27"  Part="1" 
+F 0 "R27" V 2493 1450 50  0000 C CNN
+F 1 "R" V 2584 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2630 1450 50  0001 C CNN
+F 3 "~" H 2700 1450 50  0001 C CNN
+	1    2700 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Triac_Thyristor:BT136-500 Q?
+U 1 1 60EA658D
+P 3050 1700
+AR Path="/60BE07A1/60CFA239/60EA658D" Ref="Q?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA658D" Ref="Q11"  Part="1" 
+F 0 "Q11" H 3178 1746 50  0000 L CNN
+F 1 "BT136-500" H 3178 1655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3250 1625 50  0001 L CIN
+F 3 "http://www.micropik.com/PDF/BT136-600.pdf" H 3050 1700 50  0001 L CNN
+	1    3050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1550 3050 1450
+Wire Wire Line
+	3050 1450 2850 1450
+Wire Wire Line
+	2550 1450 2400 1450
+Wire Wire Line
+	2400 1450 2400 1600
+Wire Wire Line
+	2400 1600 2300 1600
+Wire Wire Line
+	2900 1800 2300 1800
+Wire Wire Line
+	3150 1850 3050 1850
+Text Label 3150 1450 0    50   ~ 0
+Ac1
+Text Label 5650 2250 0    50   ~ 0
+Ac2
+$Comp
+L Relay_SolidState:MOC3021M U?
+U 1 1 60EA65AD
+P 1950 3500
+AR Path="/60BE07A1/60CFA239/60EA65AD" Ref="U?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA65AD" Ref="U11"  Part="1" 
+F 0 "U11" H 1950 3825 50  0000 C CNN
+F 1 "MOC3021M" H 1950 3734 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm_LongPads" H 1750 3300 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf" H 1925 3500 50  0001 L CNN
+	1    1950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EA65B3
+P 1400 3400
+AR Path="/60BE0660/60EA65B3" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA65B3" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA65B3" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA65B3" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA65B3" Ref="R20"  Part="1" 
+F 0 "R20" V 1193 3400 50  0000 C CNN
+F 1 "R" V 1284 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1330 3400 50  0001 C CNN
+F 3 "~" H 1400 3400 50  0001 C CNN
+	1    1400 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 3400 1550 3400
+Text GLabel 1100 2950 1    50   Input ~ 0
+Q1.2
+Wire Wire Line
+	1100 2950 1100 3400
+Wire Wire Line
+	1100 3400 1250 3400
+$Comp
+L Device:LED D?
+U 1 1 60EA65BD
+P 1450 3800
+AR Path="/60BE0660/60EA65BD" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60EA65BD" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60EA65BD" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA65BD" Ref="D?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA65BD" Ref="D17"  Part="1" 
+F 0 "D17" V 1489 3683 50  0000 R CNN
+F 1 "LED" V 1398 3683 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1450 3800 50  0001 C CNN
+F 3 "~" H 1450 3800 50  0001 C CNN
+	1    1450 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60EA65C3
+P 1450 4050
+AR Path="/60BE0660/60EA65C3" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60EA65C3" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60EA65C3" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA65C3" Ref="#PWR?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA65C3" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 1450 3800 50  0001 C CNN
+F 1 "GND" H 1455 3877 50  0000 C CNN
+F 2 "" H 1450 4050 50  0001 C CNN
+F 3 "" H 1450 4050 50  0001 C CNN
+	1    1450 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4050 1450 3950
+Wire Wire Line
+	1450 3650 1450 3600
+Wire Wire Line
+	1450 3600 1650 3600
+$Comp
+L Device:R R?
+U 1 1 60EA65CC
+P 2650 3250
+AR Path="/60BE0660/60EA65CC" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60EA65CC" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60EA65CC" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60CFA239/60EA65CC" Ref="R?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA65CC" Ref="R25"  Part="1" 
+F 0 "R25" V 2443 3250 50  0000 C CNN
+F 1 "R" V 2534 3250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2580 3250 50  0001 C CNN
+F 3 "~" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Triac_Thyristor:BT136-500 Q?
+U 1 1 60EA65D2
+P 3000 3500
+AR Path="/60BE07A1/60CFA239/60EA65D2" Ref="Q?"  Part="1" 
+AR Path="/60BE07A1/60E2CE48/60EA65D2" Ref="Q9"  Part="1" 
+F 0 "Q9" H 3128 3546 50  0000 L CNN
+F 1 "BT136-500" H 3128 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3200 3425 50  0001 L CIN
+F 3 "http://www.micropik.com/PDF/BT136-600.pdf" H 3000 3500 50  0001 L CNN
+	1    3000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3350 3000 3250
+Wire Wire Line
+	3000 3250 2800 3250
+Wire Wire Line
+	2500 3250 2350 3250
+Wire Wire Line
+	2350 3250 2350 3400
+Wire Wire Line
+	2350 3400 2250 3400
+Wire Wire Line
+	2850 3600 2250 3600
+Text Label 3100 3250 0    50   ~ 0
+Ac1
+Text Label 6000 1700 0    50   ~ 0
+Ac2
+Wire Wire Line
+	3100 3250 3000 3250
+Connection ~ 3000 3250
+Text Label 6000 1500 0    50   ~ 0
+Ac1
+Wire Wire Line
+	6000 1500 5900 1500
+Wire Wire Line
+	6000 1700 5900 1700
+NoConn ~ 5600 1600
+Wire Wire Line
+	3150 1450 3050 1450
+Connection ~ 3050 1450
+Wire Wire Line
+	3100 4850 3000 4850
+Connection ~ 3000 4850
+Text GLabel 6000 1350 2    50   Input ~ 0
+LineaAC1
+Wire Wire Line
+	6000 1350 5900 1350
+Wire Wire Line
+	5900 1350 5900 1500
+Connection ~ 5900 1500
+Wire Wire Line
+	5900 1500 5600 1500
+Text GLabel 6000 1800 2    50   Input ~ 0
+LineaAC2
+Wire Wire Line
+	6000 1800 5900 1800
+Wire Wire Line
+	5900 1800 5900 1700
+Connection ~ 5900 1700
+Wire Wire Line
+	5900 1700 5600 1700
+Text Label 3150 1850 0    50   ~ 0
+Triac1
+Wire Wire Line
+	5650 2250 5600 2250
+Text Label 5650 2150 0    50   ~ 0
+Triac0
+Wire Wire Line
+	5650 2150 5600 2150
+Wire Wire Line
+	3000 3650 3100 3650
+Text Label 3100 3650 0    50   ~ 0
+Triac2
+Text Label 5650 2350 0    50   ~ 0
+Triac1
+Wire Wire Line
+	5650 2350 5600 2350
+Text Label 5650 2800 0    50   ~ 0
+Ac2
+Wire Wire Line
+	5650 2800 5600 2800
+Text Label 5650 2900 0    50   ~ 0
+Triac2
+Wire Wire Line
+	5650 2900 5600 2900
+Text Label 5650 3000 0    50   ~ 0
+Ac2
+Wire Wire Line
+	5650 3000 5600 3000
+Wire Wire Line
+	3000 5250 3100 5250
+Text Label 3100 5250 0    50   ~ 0
+Triac0
+$Comp
+L Connector:Screw_Terminal_01x03 J14
+U 1 1 60E0496A
+P 5400 1600
+F 0 "J14" H 5318 1917 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 5318 1826 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x03_P5.00mm_45-Degree" H 5400 1600 50  0001 C CNN
+F 3 "~" H 5400 1600 50  0001 C CNN
+	1    5400 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J15
+U 1 1 60E058D5
+P 5400 2250
+F 0 "J15" H 5318 2567 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 5318 2476 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x03_P5.00mm_45-Degree" H 5400 2250 50  0001 C CNN
+F 3 "~" H 5400 2250 50  0001 C CNN
+	1    5400 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J16
+U 1 1 60E075BD
+P 5400 2900
+F 0 "J16" H 5318 3217 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 5318 3126 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x03_P5.00mm_45-Degree" H 5400 2900 50  0001 C CNN
+F 3 "~" H 5400 2900 50  0001 C CNN
+	1    5400 2900
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

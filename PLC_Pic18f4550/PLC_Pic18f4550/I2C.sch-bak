@@ -1,0 +1,134 @@
+EESchema Schematic File Version 4
+LIBS:PLC_Pic18f4550-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer_RTC:DS3231M U2
+U 1 1 60DF9FCE
+P 5750 3400
+F 0 "U2" H 5750 2911 50  0000 C CNN
+F 1 "DS3231M" H 5750 2820 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 5750 2800 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 6020 3450 50  0001 C CNN
+	1    5750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 60E130FE
+P 6100 3950
+F 0 "#PWR016" H 6100 3700 50  0001 C CNN
+F 1 "GND" H 6105 3777 50  0000 C CNN
+F 2 "" H 6100 3950 50  0001 C CNN
+F 3 "" H 6100 3950 50  0001 C CNN
+	1    6100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 60E134D9
+P 5650 2800
+F 0 "#PWR013" H 5650 2650 50  0001 C CNN
+F 1 "+5V" H 5665 2973 50  0000 C CNN
+F 2 "" H 5650 2800 50  0001 C CNN
+F 3 "" H 5650 2800 50  0001 C CNN
+	1    5650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2800 5650 3000
+Text GLabel 5100 3200 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	5100 3200 5250 3200
+Text GLabel 5100 3300 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	5100 3300 5250 3300
+NoConn ~ 5250 3600
+NoConn ~ 6250 3500
+NoConn ~ 6250 3200
+$Comp
+L Connector:Conn_01x04_Female J6
+U 1 1 60E1710D
+P 5350 4600
+F 0 "J6" H 5242 4885 50  0000 C CNN
+F 1 "Lcd_I2C" H 5242 4794 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5350 4600 50  0001 C CNN
+F 3 "~" H 5350 4600 50  0001 C CNN
+	1    5350 4600
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5900 4500 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	5900 4500 5550 4500
+Text GLabel 5900 4600 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	5900 4600 5550 4600
+$Comp
+L power:+5V #PWR014
+U 1 1 60E1817B
+P 5900 4700
+F 0 "#PWR014" H 5900 4550 50  0001 C CNN
+F 1 "+5V" V 5915 4828 50  0000 L CNN
+F 2 "" H 5900 4700 50  0001 C CNN
+F 3 "" H 5900 4700 50  0001 C CNN
+	1    5900 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 60E1831B
+P 5900 4800
+F 0 "#PWR015" H 5900 4550 50  0001 C CNN
+F 1 "GND" V 5905 4672 50  0000 R CNN
+F 2 "" H 5900 4800 50  0001 C CNN
+F 3 "" H 5900 4800 50  0001 C CNN
+	1    5900 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 4700 5550 4700
+Wire Wire Line
+	5550 4800 5900 4800
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 60C65370
+P 6600 3450
+F 0 "BT1" H 6718 3546 50  0000 L CNN
+F 1 "Battery_Cell" H 6718 3455 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 6600 3510 50  0001 C CNN
+F 3 "~" V 6600 3510 50  0001 C CNN
+	1    6600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3250 6600 2900
+Wire Wire Line
+	6600 2900 5750 2900
+Wire Wire Line
+	5750 2900 5750 3000
+Wire Wire Line
+	6100 3800 5750 3800
+Wire Wire Line
+	6100 3800 6100 3950
+Wire Wire Line
+	6100 3800 6600 3800
+Wire Wire Line
+	6600 3800 6600 3550
+Connection ~ 6100 3800
+$EndSCHEMATC

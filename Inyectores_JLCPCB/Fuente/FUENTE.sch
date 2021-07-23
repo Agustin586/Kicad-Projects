@@ -1,0 +1,303 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR01
+U 1 1 5ECA12F2
+P 5800 1800
+F 0 "#PWR01" H 5800 1650 50  0001 C CNN
+F 1 "VCC" H 5817 1973 50  0000 C CNN
+F 2 "" H 5800 1800 50  0001 C CNN
+F 3 "" H 5800 1800 50  0001 C CNN
+	1    5800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5ECA1988
+P 5800 1800
+F 0 "#FLG01" H 5800 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 1973 50  0000 C CNN
+F 2 "" H 5800 1800 50  0001 C CNN
+F 3 "~" H 5800 1800 50  0001 C CNN
+	1    5800 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5ECA1E76
+P 6150 1800
+F 0 "#PWR02" H 6150 1550 50  0001 C CNN
+F 1 "GND" H 6155 1627 50  0000 C CNN
+F 2 "" H 6150 1800 50  0001 C CNN
+F 3 "" H 6150 1800 50  0001 C CNN
+	1    6150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5ECA21AE
+P 6150 1800
+F 0 "#FLG02" H 6150 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 1973 50  0000 C CNN
+F 2 "" H 6150 1800 50  0001 C CNN
+F 3 "~" H 6150 1800 50  0001 C CNN
+	1    6150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 ENTRADA_RELE1
+U 1 1 5F15F1AC
+P 1700 4150
+F 0 "ENTRADA_RELE1" H 1700 3850 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1700 3700 50  0000 C CNN
+F 2 "BorneraTornillos:bornera_tornillos_1x02" H 1700 4150 50  0001 C CNN
+F 3 "~" H 1700 4150 50  0001 C CNN
+	1    1700 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 SALIDA_RELE1
+U 1 1 5F15FCB9
+P 5400 4150
+F 0 "SALIDA_RELE1" H 5500 4350 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 5500 4250 50  0000 C CNN
+F 2 "BorneraTornillos:bornera_tornillos_1x02" H 5400 4150 50  0001 C CNN
+F 3 "~" H 5400 4150 50  0001 C CNN
+	1    5400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F160C14
+P 2650 4150
+F 0 "SW1" H 2650 4435 50  0000 C CNN
+F 1 "SW_Push" H 2650 4344 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2650 4350 50  0001 C CNN
+F 3 "~" H 2650 4350 50  0001 C CNN
+	1    2650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4150 1900 4150
+Wire Wire Line
+	2450 4150 2400 4150
+Wire Wire Line
+	2400 4150 2400 4650
+Wire Wire Line
+	2400 4650 3750 4650
+Connection ~ 2400 4150
+Wire Wire Line
+	2400 4150 2300 4150
+$Comp
+L Device:R R1
+U 1 1 5F174412
+P 3250 3100
+F 0 "R1" H 3180 3054 50  0000 R CNN
+F 1 "440" H 3180 3145 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3180 3100 50  0001 C CNN
+F 3 "~" H 3250 3100 50  0001 C CNN
+	1    3250 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED ROJO1
+U 1 1 5F1751CF
+P 3250 2700
+F 0 "ROJO1" V 3197 2779 50  0000 L CNN
+F 1 "LED" V 3288 2779 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 3250 2700 50  0001 C CNN
+F 3 "~" H 3250 2700 50  0001 C CNN
+	1    3250 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 2850 3250 2950
+$Comp
+L Diode:1N4007 D8
+U 1 1 5F177463
+P 3000 4350
+F 0 "D8" H 3000 4150 50  0000 C CNN
+F 1 "1N4007" H 3000 4250 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3000 4175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 4200 3000 3900
+Wire Wire Line
+	3000 3900 3200 3900
+Wire Wire Line
+	3750 4650 3750 4500
+Text Label 2000 4350 0    50   ~ 0
+GND_RELE
+Wire Wire Line
+	3350 4500 3350 4800
+Wire Wire Line
+	3350 4800 3200 4800
+Wire Wire Line
+	3000 4800 3000 4500
+Text Label 3200 4950 0    50   ~ 0
+GND_RELE
+Wire Wire Line
+	3200 4950 3200 4800
+Connection ~ 3200 4800
+Wire Wire Line
+	3200 4800 3000 4800
+Text Label 3250 2450 0    50   ~ 0
+GND_RELE
+Wire Wire Line
+	3250 2450 3250 2550
+$Comp
+L Device:R R2
+U 1 1 5F183B5C
+P 3850 3100
+F 0 "R2" H 3780 3054 50  0000 R CNN
+F 1 "440" H 3780 3145 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3780 3100 50  0001 C CNN
+F 3 "~" H 3850 3100 50  0001 C CNN
+	1    3850 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED VERDE1
+U 1 1 5F183B66
+P 3850 2700
+F 0 "VERDE1" V 3797 2779 50  0000 L CNN
+F 1 "LED" V 3888 2779 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm" H 3850 2700 50  0001 C CNN
+F 3 "~" H 3850 2700 50  0001 C CNN
+	1    3850 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 2850 3850 2950
+Text Label 3850 2450 0    50   ~ 0
+GND_RELE
+Wire Wire Line
+	3850 2450 3850 2550
+Wire Wire Line
+	3250 3250 3250 3350
+Wire Wire Line
+	3250 3350 3650 3350
+Wire Wire Line
+	3650 3350 3650 3900
+Wire Wire Line
+	3850 3250 3850 3600
+Wire Wire Line
+	2850 4150 2850 3600
+Wire Wire Line
+	2850 3600 3200 3600
+Connection ~ 3850 3600
+Wire Wire Line
+	3850 3600 3850 3900
+Wire Wire Line
+	3200 3600 3200 3900
+Connection ~ 3200 3600
+Wire Wire Line
+	3200 3600 3850 3600
+Connection ~ 3200 3900
+Wire Wire Line
+	3200 3900 3350 3900
+Wire Wire Line
+	5200 3600 5200 4150
+Text Label 5100 4250 2    50   ~ 0
+GND_RELE
+Wire Wire Line
+	1900 4250 2000 4250
+Wire Wire Line
+	2000 4250 2000 4350
+NoConn ~ 4150 4500
+NoConn ~ 4050 3900
+NoConn ~ 4250 3900
+Wire Wire Line
+	5100 4250 5200 4250
+$Comp
+L Diode:1N5408 D7
+U 1 1 5F1B1D5B
+P 2150 4150
+F 0 "D7" H 2150 3934 50  0000 C CNN
+F 1 "1N5408" H 2150 4025 50  0000 C CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 2150 3975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 2150 4150 50  0001 C CNN
+	1    2150 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Relay:JW2 RL1
+U 1 1 5F203DE0
+P 3750 4200
+F 0 "RL1" H 4380 4246 50  0000 L CNN
+F 1 "JW2" H 4380 4155 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_Panasonic_JW2" H 4400 4150 50  0001 L CNN
+F 3 "http://www3.panasonic.biz/ac/e_download/control/relay/power/catalog/mech_eng_jw.pdf?via=ok" H 3550 4200 50  0001 C CNN
+	1    3750 4200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 4250
+Wire Wire Line
+	5200 5150 5300 5150
+Wire Wire Line
+	4850 5150 5200 5150
+Connection ~ 5200 5150
+Wire Wire Line
+	5200 5150 5200 4250
+Wire Wire Line
+	4700 3600 5200 3600
+Wire Wire Line
+	3850 3600 4700 3600
+Connection ~ 4700 3600
+Wire Wire Line
+	4700 4600 4700 3600
+Wire Wire Line
+	4850 4600 4700 4600
+Wire Wire Line
+	4850 4600 5300 4600
+Connection ~ 4850 4600
+Wire Wire Line
+	4850 4700 4850 4600
+Wire Wire Line
+	4850 5000 4850 5150
+$Comp
+L Diode:1N5408 D9
+U 1 1 5F1A750D
+P 4850 4850
+F 0 "D9" V 4804 4929 50  0000 L CNN
+F 1 "1N5408" V 4895 4929 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 4850 4675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88516/1n5400.pdf" H 4850 4850 50  0001 C CNN
+	1    4850 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 4950 5300 5150
+Wire Wire Line
+	5300 4850 5300 4750
+Wire Wire Line
+	5300 4750 5300 4600
+Connection ~ 5300 4750
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 5F1AB2A8
+P 5500 4850
+F 0 "J1" H 5580 4892 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 5580 4801 50  0000 L CNN
+F 2 "BorneraTornillos:bornera_tornillos_1x03" H 5500 4850 50  0001 C CNN
+F 3 "~" H 5500 4850 50  0001 C CNN
+	1    5500 4850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

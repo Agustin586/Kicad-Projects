@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:L7805 U1
+U 1 1 5EC9D451
+P 6050 3400
+F 0 "U1" H 6050 3642 50  0000 C CNN
+F 1 "L7805" H 6050 3551 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 6075 3250 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 6050 3350 50  0001 C CNN
+	1    6050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5EC9E499
+P 5600 3550
+F 0 "C1" H 5718 3596 50  0000 L CNN
+F 1 "470uf/50v" H 5400 3300 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5638 3400 50  0001 C CNN
+F 3 "~" H 5600 3550 50  0001 C CNN
+	1    5600 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3400 5700 3400
+Wire Wire Line
+	6050 3700 5600 3700
+$Comp
+L Device:CP C2
+U 1 1 5EC9EC9C
+P 6500 3550
+F 0 "C2" H 6300 3450 50  0000 L CNN
+F 1 "100uf/50v" H 6300 3300 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6538 3400 50  0001 C CNN
+F 3 "~" H 6500 3550 50  0001 C CNN
+	1    6500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3400 6350 3400
+Wire Wire Line
+	6500 3700 6050 3700
+Connection ~ 6050 3700
+Connection ~ 5600 3700
+Connection ~ 5600 3400
+Text GLabel 7200 3400 2    50   Output ~ 0
+5V
+Wire Wire Line
+	7200 3400 6800 3400
+Connection ~ 6500 3400
+Text GLabel 5600 3200 1    50   Output ~ 0
+12V
+Wire Wire Line
+	5600 3200 5600 3400
+$Comp
+L power:VCC #PWR01
+U 1 1 5ECA12F2
+P 5800 1800
+F 0 "#PWR01" H 5800 1650 50  0001 C CNN
+F 1 "VCC" H 5817 1973 50  0000 C CNN
+F 2 "" H 5800 1800 50  0001 C CNN
+F 3 "" H 5800 1800 50  0001 C CNN
+	1    5800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5ECA1988
+P 5800 1800
+F 0 "#FLG01" H 5800 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 1973 50  0000 C CNN
+F 2 "" H 5800 1800 50  0001 C CNN
+F 3 "~" H 5800 1800 50  0001 C CNN
+	1    5800 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5ECA1E76
+P 6150 1800
+F 0 "#PWR02" H 6150 1550 50  0001 C CNN
+F 1 "GND" H 6155 1627 50  0000 C CNN
+F 2 "" H 6150 1800 50  0001 C CNN
+F 3 "" H 6150 1800 50  0001 C CNN
+	1    6150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5ECA21AE
+P 6150 1800
+F 0 "#FLG02" H 6150 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 1973 50  0000 C CNN
+F 2 "" H 6150 1800 50  0001 C CNN
+F 3 "~" H 6150 1800 50  0001 C CNN
+	1    6150 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5ECA23FA
+P 6050 3800
+F 0 "#PWR04" H 6050 3550 50  0001 C CNN
+F 1 "GND" H 6055 3627 50  0000 C CNN
+F 2 "" H 6050 3800 50  0001 C CNN
+F 3 "" H 6050 3800 50  0001 C CNN
+	1    6050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3800 6050 3700
+$Comp
+L power:VCC #PWR03
+U 1 1 5ECA2A72
+P 5400 3150
+F 0 "#PWR03" H 5400 3000 50  0001 C CNN
+F 1 "VCC" H 5417 3323 50  0000 C CNN
+F 2 "" H 5400 3150 50  0001 C CNN
+F 3 "" H 5400 3150 50  0001 C CNN
+	1    5400 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3150 5400 3400
+Wire Wire Line
+	5400 3400 5600 3400
+$Comp
+L Diode:1N4007 D1
+U 1 1 5EF0E2D3
+P 6050 3050
+F 0 "D1" H 6050 3266 50  0000 C CNN
+F 1 "1N4007" H 6050 3175 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6050 2875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6050 3050 50  0001 C CNN
+	1    6050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3050 5700 3050
+Wire Wire Line
+	5700 3050 5700 3400
+Connection ~ 5700 3400
+Wire Wire Line
+	5700 3400 5750 3400
+Wire Wire Line
+	6200 3050 6500 3050
+Wire Wire Line
+	6500 3050 6500 3400
+$Comp
+L Diode:1N4007 D2
+U 1 1 5EF0EE52
+P 6800 3550
+F 0 "D2" V 6754 3629 50  0000 L CNN
+F 1 "1N4007" V 6845 3629 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6800 3375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6800 3550 50  0001 C CNN
+	1    6800 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 6800 3400
+Wire Wire Line
+	6800 3400 6500 3400
+Wire Wire Line
+	6800 3700 6500 3700
+Connection ~ 6500 3700
+Connection ~ 5400 3400
+Wire Wire Line
+	4700 3400 5400 3400
+$Comp
+L Connector:Screw_Terminal_01x03 J4
+U 1 1 5F38743A
+P 4500 3500
+F 0 "J4" H 4418 3817 50  0000 C CNN
+F 1 "ENTRADA_CIRCUITO" H 4418 3726 50  0000 C CNN
+F 2 "BorneraTornillos:bornera_tornillos_1x03" H 4500 3500 50  0001 C CNN
+F 3 "~" H 4500 3500 50  0001 C CNN
+	1    4500 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3600 4700 3700
+Wire Wire Line
+	4700 3700 5600 3700
+NoConn ~ 4700 3500
+$EndSCHEMATC

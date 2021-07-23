@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 60E06B20
+P 3800 3400
+F 0 "J1" H 3718 3617 50  0000 C CNN
+F 1 "Entrada_24VDC" H 3718 3526 50  0000 C CNN
+F 2 "" H 3800 3400 50  0001 C CNN
+F 3 "~" H 3800 3400 50  0001 C CNN
+	1    3800 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0101
+U 1 1 60E0793B
+P 4250 3300
+F 0 "#PWR0101" H 4250 3150 50  0001 C CNN
+F 1 "+24V" H 4265 3473 50  0000 C CNN
+F 2 "" H 4250 3300 50  0001 C CNN
+F 3 "" H 4250 3300 50  0001 C CNN
+	1    4250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3300 4250 3400
+Wire Wire Line
+	4250 3400 4050 3400
+$Comp
+L power:GND #PWR0102
+U 1 1 60E07C8C
+P 4250 3600
+F 0 "#PWR0102" H 4250 3350 50  0001 C CNN
+F 1 "GND" H 4255 3427 50  0000 C CNN
+F 2 "" H 4250 3600 50  0001 C CNN
+F 3 "" H 4250 3600 50  0001 C CNN
+	1    4250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3600 4250 3500
+Wire Wire Line
+	4250 3500 4150 3500
+$Comp
+L Regulator_Linear:L7805 U2
+U 1 1 60E08182
+P 5200 2550
+F 0 "U2" H 5200 2792 50  0000 C CNN
+F 1 "L7805" H 5200 2701 50  0000 C CNN
+F 2 "" H 5225 2400 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5200 2500 50  0001 C CNN
+	1    5200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7810_TO220 U3
+U 1 1 60E08E8B
+P 5200 3850
+F 0 "U3" H 5200 4092 50  0000 C CNN
+F 1 "LM7810_TO220" H 5200 4001 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5200 4075 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 5200 3800 50  0001 C CNN
+	1    5200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7812_TO220 U4
+U 1 1 60E09F6D
+P 5200 5150
+F 0 "U4" H 5200 5392 50  0000 C CNN
+F 1 "LM7812_TO220" H 5200 5301 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5200 5375 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 5200 5100 50  0001 C CNN
+	1    5200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60E0ACA8
+P 5200 4250
+F 0 "#PWR0103" H 5200 4000 50  0001 C CNN
+F 1 "GND" H 5205 4077 50  0000 C CNN
+F 2 "" H 5200 4250 50  0001 C CNN
+F 3 "" H 5200 4250 50  0001 C CNN
+	1    5200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4250 5200 4150
+$Comp
+L power:GND #PWR0104
+U 1 1 60E0B0CB
+P 5200 5600
+F 0 "#PWR0104" H 5200 5350 50  0001 C CNN
+F 1 "GND" H 5205 5427 50  0000 C CNN
+F 2 "" H 5200 5600 50  0001 C CNN
+F 3 "" H 5200 5600 50  0001 C CNN
+	1    5200 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5600 5200 5550
+$Comp
+L power:GND #PWR0105
+U 1 1 60E0B447
+P 5200 2950
+F 0 "#PWR0105" H 5200 2700 50  0001 C CNN
+F 1 "GND" H 5205 2777 50  0000 C CNN
+F 2 "" H 5200 2950 50  0001 C CNN
+F 3 "" H 5200 2950 50  0001 C CNN
+	1    5200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2950 5200 2900
+$Comp
+L Diode:1N4007 D1
+U 1 1 60E0BABC
+P 5200 2150
+F 0 "D1" H 5200 2366 50  0000 C CNN
+F 1 "1N4007" H 5200 2275 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5200 1975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5200 2150 50  0001 C CNN
+	1    5200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2150 4900 2150
+Wire Wire Line
+	4900 2150 4900 2550
+Wire Wire Line
+	5350 2150 5500 2150
+Wire Wire Line
+	5500 2150 5500 2550
+$Comp
+L Diode:1N4007 D2
+U 1 1 60E0E2D1
+P 5200 3450
+F 0 "D2" H 5200 3666 50  0000 C CNN
+F 1 "1N4007" H 5200 3575 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5200 3275 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3450 4900 3450
+Wire Wire Line
+	4900 3450 4900 3850
+Wire Wire Line
+	5350 3450 5500 3450
+Wire Wire Line
+	5500 3450 5500 3850
+$Comp
+L Diode:1N4007 D3
+U 1 1 60E11A00
+P 5200 4750
+F 0 "D3" H 5200 4966 50  0000 C CNN
+F 1 "1N4007" H 5200 4875 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5200 4575 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5200 4750 50  0001 C CNN
+	1    5200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4750 4900 4750
+Wire Wire Line
+	4900 4750 4900 5150
+Wire Wire Line
+	5350 4750 5500 4750
+Wire Wire Line
+	5500 4750 5500 5150
+Wire Wire Line
+	4600 3400 4250 3400
+Connection ~ 4250 3400
+Wire Wire Line
+	4900 2550 4750 2550
+Wire Wire Line
+	4600 2550 4600 3400
+Connection ~ 4900 2550
+Connection ~ 4600 3400
+Wire Wire Line
+	4750 3400 4600 3400
+$Comp
+L Device:C C1
+U 1 1 60E18BE0
+P 4750 2750
+F 0 "C1" H 4865 2796 50  0000 L CNN
+F 1 "C" H 4865 2705 50  0000 L CNN
+F 2 "" H 4788 2600 50  0001 C CNN
+F 3 "~" H 4750 2750 50  0001 C CNN
+	1    4750 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 60E19751
+P 5600 2750
+F 0 "C4" H 5715 2796 50  0000 L CNN
+F 1 "C" H 5715 2705 50  0000 L CNN
+F 2 "" H 5638 2600 50  0001 C CNN
+F 3 "~" H 5600 2750 50  0001 C CNN
+	1    5600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2600 5600 2550
+Wire Wire Line
+	5600 2550 5500 2550
+Connection ~ 5500 2550
+Wire Wire Line
+	4750 2600 4750 2550
+Connection ~ 4750 2550
+Wire Wire Line
+	4750 2550 4600 2550
+Wire Wire Line
+	4750 3400 4750 3850
+Connection ~ 4900 3850
+Wire Wire Line
+	4600 5150 4750 5150
+Wire Wire Line
+	4600 3400 4600 5150
+Connection ~ 4900 5150
+Wire Wire Line
+	4750 2900 5200 2900
+Connection ~ 5200 2900
+Wire Wire Line
+	5200 2900 5200 2850
+Wire Wire Line
+	5200 2900 5600 2900
+$Comp
+L Device:C C2
+U 1 1 60E208AB
+P 4750 4100
+F 0 "C2" H 4865 4146 50  0000 L CNN
+F 1 "C" H 4865 4055 50  0000 L CNN
+F 2 "" H 4788 3950 50  0001 C CNN
+F 3 "~" H 4750 4100 50  0001 C CNN
+	1    4750 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3850 4900 3850
+Wire Wire Line
+	4750 3950 4750 3850
+Connection ~ 4750 3850
+Wire Wire Line
+	4750 4250 5200 4250
+Connection ~ 5200 4250
+$Comp
+L Device:C C5
+U 1 1 60E22988
+P 5600 4100
+F 0 "C5" H 5715 4146 50  0000 L CNN
+F 1 "C" H 5715 4055 50  0000 L CNN
+F 2 "" H 5638 3950 50  0001 C CNN
+F 3 "~" H 5600 4100 50  0001 C CNN
+	1    5600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3950 5600 3850
+Wire Wire Line
+	5600 3850 5500 3850
+Connection ~ 5500 3850
+Wire Wire Line
+	5600 4250 5200 4250
+$Comp
+L Device:C C3
+U 1 1 60E23D26
+P 4750 5400
+F 0 "C3" H 4865 5446 50  0000 L CNN
+F 1 "C" H 4865 5355 50  0000 L CNN
+F 2 "" H 4788 5250 50  0001 C CNN
+F 3 "~" H 4750 5400 50  0001 C CNN
+	1    4750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 60E241D1
+P 5600 5400
+F 0 "C6" H 5715 5446 50  0000 L CNN
+F 1 "C" H 5715 5355 50  0000 L CNN
+F 2 "" H 5638 5250 50  0001 C CNN
+F 3 "~" H 5600 5400 50  0001 C CNN
+	1    5600 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 5250 4750 5150
+Connection ~ 4750 5150
+Wire Wire Line
+	4750 5150 4900 5150
+Wire Wire Line
+	4750 5550 5200 5550
+Connection ~ 5200 5550
+Wire Wire Line
+	5200 5550 5200 5450
+Wire Wire Line
+	5200 5550 5600 5550
+Wire Wire Line
+	5600 5250 5600 5150
+Wire Wire Line
+	5600 5150 5500 5150
+Connection ~ 5500 5150
+$Comp
+L power:+5V #PWR0106
+U 1 1 60E27D50
+P 5850 2450
+F 0 "#PWR0106" H 5850 2300 50  0001 C CNN
+F 1 "+5V" H 5865 2623 50  0000 C CNN
+F 2 "" H 5850 2450 50  0001 C CNN
+F 3 "" H 5850 2450 50  0001 C CNN
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2450 5850 2550
+Wire Wire Line
+	5850 2550 5600 2550
+Connection ~ 5600 2550
+$Comp
+L power:+10V #PWR0107
+U 1 1 60E28FEE
+P 5850 3750
+F 0 "#PWR0107" H 5850 3600 50  0001 C CNN
+F 1 "+10V" H 5865 3923 50  0000 C CNN
+F 2 "" H 5850 3750 50  0001 C CNN
+F 3 "" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3750 5850 3850
+Wire Wire Line
+	5850 3850 5600 3850
+Connection ~ 5600 3850
+$Comp
+L power:+12V #PWR0108
+U 1 1 60E2A2BB
+P 5850 5050
+F 0 "#PWR0108" H 5850 4900 50  0001 C CNN
+F 1 "+12V" H 5865 5223 50  0000 C CNN
+F 2 "" H 5850 5050 50  0001 C CNN
+F 3 "" H 5850 5050 50  0001 C CNN
+	1    5850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5050 5850 5150
+Wire Wire Line
+	5850 5150 5600 5150
+Connection ~ 5600 5150
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 60E2BE5D
+P 3800 3900
+F 0 "J2" H 3718 4117 50  0000 C CNN
+F 1 "Salida_24VDC" H 3718 4026 50  0000 C CNN
+F 2 "" H 3800 3900 50  0001 C CNN
+F 3 "~" H 3800 3900 50  0001 C CNN
+	1    3800 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3900 4050 3900
+Wire Wire Line
+	4050 3900 4050 3400
+Connection ~ 4050 3400
+Wire Wire Line
+	4050 3400 4000 3400
+Wire Wire Line
+	4000 4000 4150 4000
+Wire Wire Line
+	4150 4000 4150 3500
+Connection ~ 4150 3500
+Wire Wire Line
+	4150 3500 4000 3500
+$EndSCHEMATC

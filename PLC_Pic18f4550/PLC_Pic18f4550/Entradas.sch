@@ -1,0 +1,1111 @@
+EESchema Schematic File Version 4
+LIBS:PLC_Pic18f4550-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Isolator:PC817 U?
+U 1 1 60C43E5C
+P 2100 1400
+AR Path="/60BE0660/60C43E5C" Ref="U?"  Part="1" 
+AR Path="/60BE08C7/60C43E5C" Ref="U19"  Part="1" 
+F 0 "U19" H 2100 1725 50  0000 C CNN
+F 1 "PC817" H 2100 1634 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 1900 1200 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2100 1400 50  0001 L CNN
+	1    2100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60C43E62
+P 2500 1000
+AR Path="/60BE0660/60C43E62" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43E62" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 2500 850 50  0001 C CNN
+F 1 "+5V" H 2515 1173 50  0000 C CNN
+F 2 "" H 2500 1000 50  0001 C CNN
+F 3 "" H 2500 1000 50  0001 C CNN
+	1    2500 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1300 2500 1300
+Wire Wire Line
+	2500 1300 2500 1000
+$Comp
+L Device:R R?
+U 1 1 60C43E6A
+P 1550 1300
+AR Path="/60BE0660/60C43E6A" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60C43E6A" Ref="R41"  Part="1" 
+F 0 "R41" V 1343 1300 50  0000 C CNN
+F 1 "R" V 1434 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1480 1300 50  0001 C CNN
+F 3 "~" H 1550 1300 50  0001 C CNN
+	1    1550 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 1300 1800 1300
+Wire Wire Line
+	1250 1300 1400 1300
+$Comp
+L Device:LED D?
+U 1 1 60C43E79
+P 1600 1700
+AR Path="/60BE0660/60C43E79" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60C43E79" Ref="D25"  Part="1" 
+F 0 "D25" V 1639 1583 50  0000 R CNN
+F 1 "LED" V 1548 1583 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1600 1700 50  0001 C CNN
+F 3 "~" H 1600 1700 50  0001 C CNN
+	1    1600 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 1550 1600 1500
+Wire Wire Line
+	1600 1500 1800 1500
+$Comp
+L power:GND #PWR?
+U 1 1 60C43E81
+P 1600 1950
+AR Path="/60BE0660/60C43E81" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43E81" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 1600 1700 50  0001 C CNN
+F 1 "GND" H 1605 1777 50  0000 C CNN
+F 2 "" H 1600 1950 50  0001 C CNN
+F 3 "" H 1600 1950 50  0001 C CNN
+	1    1600 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1950 1600 1850
+Text GLabel 2600 1500 2    50   Input ~ 0
+I0.0
+Wire Wire Line
+	2600 1500 2400 1500
+$Comp
+L Isolator:PC817 U?
+U 1 1 60C43E8A
+P 2100 2850
+AR Path="/60BE0660/60C43E8A" Ref="U?"  Part="1" 
+AR Path="/60BE08C7/60C43E8A" Ref="U20"  Part="1" 
+F 0 "U20" H 2100 3175 50  0000 C CNN
+F 1 "PC817" H 2100 3084 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 1900 2650 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2100 2850 50  0001 L CNN
+	1    2100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60C43E90
+P 2500 2450
+AR Path="/60BE0660/60C43E90" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43E90" Ref="#PWR072"  Part="1" 
+F 0 "#PWR072" H 2500 2300 50  0001 C CNN
+F 1 "+5V" H 2515 2623 50  0000 C CNN
+F 2 "" H 2500 2450 50  0001 C CNN
+F 3 "" H 2500 2450 50  0001 C CNN
+	1    2500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2750 2500 2750
+Wire Wire Line
+	2500 2750 2500 2450
+$Comp
+L Device:R R?
+U 1 1 60C43E98
+P 1550 2750
+AR Path="/60BE0660/60C43E98" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60C43E98" Ref="R42"  Part="1" 
+F 0 "R42" V 1343 2750 50  0000 C CNN
+F 1 "R" V 1434 2750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1480 2750 50  0001 C CNN
+F 3 "~" H 1550 2750 50  0001 C CNN
+	1    1550 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 2750 1800 2750
+Wire Wire Line
+	1250 2750 1400 2750
+$Comp
+L Device:LED D?
+U 1 1 60C43EA7
+P 1600 3150
+AR Path="/60BE0660/60C43EA7" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60C43EA7" Ref="D26"  Part="1" 
+F 0 "D26" V 1639 3033 50  0000 R CNN
+F 1 "LED" V 1548 3033 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 1600 3150 50  0001 C CNN
+F 3 "~" H 1600 3150 50  0001 C CNN
+	1    1600 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1600 3000 1600 2950
+Wire Wire Line
+	1600 2950 1800 2950
+$Comp
+L power:GND #PWR?
+U 1 1 60C43EAF
+P 1600 3400
+AR Path="/60BE0660/60C43EAF" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43EAF" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 1600 3150 50  0001 C CNN
+F 1 "GND" H 1605 3227 50  0000 C CNN
+F 2 "" H 1600 3400 50  0001 C CNN
+F 3 "" H 1600 3400 50  0001 C CNN
+	1    1600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3400 1600 3300
+Text GLabel 2600 2950 2    50   Input ~ 0
+I0.1
+Wire Wire Line
+	2600 2950 2400 2950
+$Comp
+L Isolator:PC817 U?
+U 1 1 60C43EB8
+P 3950 1400
+AR Path="/60BE0660/60C43EB8" Ref="U?"  Part="1" 
+AR Path="/60BE08C7/60C43EB8" Ref="U21"  Part="1" 
+F 0 "U21" H 3950 1725 50  0000 C CNN
+F 1 "PC817" H 3950 1634 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 3750 1200 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3950 1400 50  0001 L CNN
+	1    3950 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60C43EBE
+P 4350 1000
+AR Path="/60BE0660/60C43EBE" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43EBE" Ref="#PWR080"  Part="1" 
+F 0 "#PWR080" H 4350 850 50  0001 C CNN
+F 1 "+5V" H 4365 1173 50  0000 C CNN
+F 2 "" H 4350 1000 50  0001 C CNN
+F 3 "" H 4350 1000 50  0001 C CNN
+	1    4350 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1300 4350 1300
+Wire Wire Line
+	4350 1300 4350 1000
+$Comp
+L Device:R R?
+U 1 1 60C43EC6
+P 3400 1300
+AR Path="/60BE0660/60C43EC6" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60C43EC6" Ref="R47"  Part="1" 
+F 0 "R47" V 3193 1300 50  0000 C CNN
+F 1 "R" V 3284 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3330 1300 50  0001 C CNN
+F 3 "~" H 3400 1300 50  0001 C CNN
+	1    3400 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 1300 3650 1300
+Wire Wire Line
+	3100 1300 3250 1300
+$Comp
+L Device:LED D?
+U 1 1 60C43ED5
+P 3450 1700
+AR Path="/60BE0660/60C43ED5" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60C43ED5" Ref="D29"  Part="1" 
+F 0 "D29" V 3489 1583 50  0000 R CNN
+F 1 "LED" V 3398 1583 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3450 1700 50  0001 C CNN
+F 3 "~" H 3450 1700 50  0001 C CNN
+	1    3450 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 1550 3450 1500
+Wire Wire Line
+	3450 1500 3650 1500
+$Comp
+L power:GND #PWR?
+U 1 1 60C43EDD
+P 3450 1950
+AR Path="/60BE0660/60C43EDD" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43EDD" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 3450 1700 50  0001 C CNN
+F 1 "GND" H 3455 1777 50  0000 C CNN
+F 2 "" H 3450 1950 50  0001 C CNN
+F 3 "" H 3450 1950 50  0001 C CNN
+	1    3450 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1950 3450 1850
+Text GLabel 4450 1500 2    50   Input ~ 0
+I0.2
+Wire Wire Line
+	4450 1500 4250 1500
+$Comp
+L Isolator:PC817 U?
+U 1 1 60C43EE6
+P 3950 2850
+AR Path="/60BE0660/60C43EE6" Ref="U?"  Part="1" 
+AR Path="/60BE08C7/60C43EE6" Ref="U22"  Part="1" 
+F 0 "U22" H 3950 3175 50  0000 C CNN
+F 1 "PC817" H 3950 3084 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 3750 2650 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3950 2850 50  0001 L CNN
+	1    3950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60C43EEC
+P 4350 2450
+AR Path="/60BE0660/60C43EEC" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43EEC" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 4350 2300 50  0001 C CNN
+F 1 "+5V" H 4365 2623 50  0000 C CNN
+F 2 "" H 4350 2450 50  0001 C CNN
+F 3 "" H 4350 2450 50  0001 C CNN
+	1    4350 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2750 4350 2750
+Wire Wire Line
+	4350 2750 4350 2450
+$Comp
+L Device:R R?
+U 1 1 60C43EF4
+P 3400 2750
+AR Path="/60BE0660/60C43EF4" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60C43EF4" Ref="R48"  Part="1" 
+F 0 "R48" V 3193 2750 50  0000 C CNN
+F 1 "R" V 3284 2750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3330 2750 50  0001 C CNN
+F 3 "~" H 3400 2750 50  0001 C CNN
+	1    3400 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 2750 3650 2750
+Wire Wire Line
+	3100 2750 3250 2750
+$Comp
+L Device:LED D?
+U 1 1 60C43F03
+P 3450 3150
+AR Path="/60BE0660/60C43F03" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60C43F03" Ref="D30"  Part="1" 
+F 0 "D30" V 3489 3033 50  0000 R CNN
+F 1 "LED" V 3398 3033 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3450 3150 50  0001 C CNN
+F 3 "~" H 3450 3150 50  0001 C CNN
+	1    3450 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 3000 3450 2950
+Wire Wire Line
+	3450 2950 3650 2950
+$Comp
+L power:GND #PWR?
+U 1 1 60C43F0B
+P 3450 3400
+AR Path="/60BE0660/60C43F0B" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43F0B" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 3450 3150 50  0001 C CNN
+F 1 "GND" H 3455 3227 50  0000 C CNN
+F 2 "" H 3450 3400 50  0001 C CNN
+F 3 "" H 3450 3400 50  0001 C CNN
+	1    3450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3400 3450 3300
+Text GLabel 4450 2950 2    50   Input ~ 0
+I0.3
+Wire Wire Line
+	4450 2950 4250 2950
+$Comp
+L Amplifier_Operational:LM324A U?
+U 1 1 60C43F14
+P 2000 4700
+AR Path="/60BE0660/60C43F14" Ref="U?"  Part="1" 
+AR Path="/60BE08C7/60C43F14" Ref="U18"  Part="1" 
+F 0 "U18" H 2000 5067 50  0000 C CNN
+F 1 "LM324A" H 2000 4976 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1950 4800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 2050 4900 50  0001 C CNN
+	1    2000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N47xxA D?
+U 1 1 60C43F1A
+P 2950 4900
+AR Path="/60BE0660/60C43F1A" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60C43F1A" Ref="D27"  Part="1" 
+F 0 "D27" V 2904 4979 50  0000 L CNN
+F 1 "1N47xxA" V 2995 4979 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2950 4725 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 2950 4900 50  0001 C CNN
+	1    2950 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C43F20
+P 2500 4700
+AR Path="/60BE0660/60C43F20" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60C43F20" Ref="R43"  Part="1" 
+F 0 "R43" V 2293 4700 50  0000 C CNN
+F 1 "R" V 2384 4700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2430 4700 50  0001 C CNN
+F 3 "~" H 2500 4700 50  0001 C CNN
+	1    2500 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 4700 2300 4700
+Wire Wire Line
+	2950 4750 2950 4700
+Wire Wire Line
+	2950 4700 2700 4700
+Wire Wire Line
+	1700 4600 1400 4600
+Wire Wire Line
+	1700 4800 1700 5000
+Wire Wire Line
+	1700 5000 2300 5000
+Wire Wire Line
+	2300 5000 2300 4700
+Connection ~ 2300 4700
+Text GLabel 3300 4700 2    50   Input ~ 0
+IA0.0
+Wire Wire Line
+	3300 4700 2950 4700
+Connection ~ 2950 4700
+$Comp
+L Amplifier_Operational:LM324A U?
+U 2 1 60C43F55
+P 2000 6350
+AR Path="/60BE0660/60C43F55" Ref="U?"  Part="2" 
+AR Path="/60BE08C7/60C43F55" Ref="U18"  Part="2" 
+F 0 "U18" H 2000 6717 50  0000 C CNN
+F 1 "LM324A" H 2000 6626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 1950 6450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 2050 6550 50  0001 C CNN
+	2    2000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N47xxA D?
+U 1 1 60C43F5B
+P 2950 6550
+AR Path="/60BE0660/60C43F5B" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60C43F5B" Ref="D28"  Part="1" 
+F 0 "D28" V 2904 6629 50  0000 L CNN
+F 1 "1N47xxA" V 2995 6629 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2950 6375 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 2950 6550 50  0001 C CNN
+	1    2950 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C43F61
+P 2500 6350
+AR Path="/60BE0660/60C43F61" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60C43F61" Ref="R44"  Part="1" 
+F 0 "R44" V 2293 6350 50  0000 C CNN
+F 1 "R" V 2384 6350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2430 6350 50  0001 C CNN
+F 3 "~" H 2500 6350 50  0001 C CNN
+	1    2500 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 6350 2300 6350
+Wire Wire Line
+	2950 6400 2950 6350
+Wire Wire Line
+	2950 6350 2750 6350
+Wire Wire Line
+	1700 6250 1400 6250
+Wire Wire Line
+	1700 6450 1700 6650
+Wire Wire Line
+	1700 6650 2300 6650
+Wire Wire Line
+	2300 6650 2300 6350
+Connection ~ 2300 6350
+$Comp
+L power:GND #PWR?
+U 1 1 60C43F8C
+P 2950 6800
+AR Path="/60BE0660/60C43F8C" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43F8C" Ref="#PWR076"  Part="1" 
+F 0 "#PWR076" H 2950 6550 50  0001 C CNN
+F 1 "GND" H 2955 6627 50  0000 C CNN
+F 2 "" H 2950 6800 50  0001 C CNN
+F 3 "" H 2950 6800 50  0001 C CNN
+	1    2950 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6800 2950 6700
+Text GLabel 3300 6350 2    50   Input ~ 0
+IA0.1
+Wire Wire Line
+	3300 6350 2950 6350
+Connection ~ 2950 6350
+$Comp
+L Amplifier_Operational:LM324A U?
+U 3 1 60C43F96
+P 4450 4800
+AR Path="/60BE0660/60C43F96" Ref="U?"  Part="3" 
+AR Path="/60BE08C7/60C43F96" Ref="U18"  Part="3" 
+F 0 "U18" H 4450 5167 50  0000 C CNN
+F 1 "LM324A" H 4450 5076 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4400 4900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4500 5000 50  0001 C CNN
+	3    4450 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C43FA2
+P 4950 4800
+AR Path="/60BE0660/60C43FA2" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60C43FA2" Ref="R49"  Part="1" 
+F 0 "R49" V 4743 4800 50  0000 C CNN
+F 1 "R" V 4834 4800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4880 4800 50  0001 C CNN
+F 3 "~" H 4950 4800 50  0001 C CNN
+	1    4950 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 4800 4750 4800
+Wire Wire Line
+	4150 4700 3800 4700
+Wire Wire Line
+	4150 4900 4150 5100
+Wire Wire Line
+	4150 5100 4750 5100
+Wire Wire Line
+	4750 5100 4750 4800
+Connection ~ 4750 4800
+$Comp
+L power:GND #PWR?
+U 1 1 60C43FCD
+P 5500 5200
+AR Path="/60BE0660/60C43FCD" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43FCD" Ref="#PWR086"  Part="1" 
+F 0 "#PWR086" H 5500 4950 50  0001 C CNN
+F 1 "GND" H 5505 5027 50  0000 C CNN
+F 2 "" H 5500 5200 50  0001 C CNN
+F 3 "" H 5500 5200 50  0001 C CNN
+	1    5500 5200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 4800 2    50   Input ~ 0
+IA0.2
+Wire Wire Line
+	5700 4800 5500 4800
+Connection ~ 5500 4800
+$Comp
+L Amplifier_Operational:LM324A U?
+U 5 1 60C43FDF
+P 2800 4150
+AR Path="/60BE0660/60C43FDF" Ref="U?"  Part="5" 
+AR Path="/60BE08C7/60C43FDF" Ref="U18"  Part="5" 
+F 0 "U18" V 2475 4150 50  0000 C CNN
+F 1 "LM324A" V 2566 4150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 2750 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 2850 4350 50  0001 C CNN
+	5    2800 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C43FE5
+P 2400 4100
+AR Path="/60BE0660/60C43FE5" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43FE5" Ref="#PWR070"  Part="1" 
+F 0 "#PWR070" H 2400 3850 50  0001 C CNN
+F 1 "GND" H 2405 3927 50  0000 C CNN
+F 2 "" H 2400 4100 50  0001 C CNN
+F 3 "" H 2400 4100 50  0001 C CNN
+	1    2400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4100 2400 4050
+Wire Wire Line
+	2400 4050 2500 4050
+Wire Wire Line
+	3200 4100 3200 4050
+Wire Wire Line
+	3200 4050 3100 4050
+$Comp
+L Amplifier_Operational:LM324A U?
+U 4 1 60C57764
+P 4450 6400
+AR Path="/60BE0660/60C57764" Ref="U?"  Part="3" 
+AR Path="/60BE08C7/60C57764" Ref="U18"  Part="4" 
+F 0 "U18" H 4450 6767 50  0000 C CNN
+F 1 "LM324A" H 4450 6676 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 4400 6500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4500 6600 50  0001 C CNN
+	4    4450 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N47xxA D?
+U 1 1 60C5776A
+P 5500 6600
+AR Path="/60BE0660/60C5776A" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60C5776A" Ref="D34"  Part="1" 
+F 0 "D34" V 5454 6679 50  0000 L CNN
+F 1 "1N47xxA" V 5545 6679 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5500 6425 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 5500 6600 50  0001 C CNN
+	1    5500 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60C57770
+P 4950 6400
+AR Path="/60BE0660/60C57770" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60C57770" Ref="R50"  Part="1" 
+F 0 "R50" V 4743 6400 50  0000 C CNN
+F 1 "R" V 4834 6400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4880 6400 50  0001 C CNN
+F 3 "~" H 4950 6400 50  0001 C CNN
+	1    4950 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 6400 4750 6400
+Wire Wire Line
+	5500 6450 5500 6400
+Wire Wire Line
+	4150 6300 3800 6300
+Wire Wire Line
+	4150 6500 4150 6700
+Wire Wire Line
+	4150 6700 4750 6700
+Wire Wire Line
+	4750 6700 4750 6400
+Connection ~ 4750 6400
+$Comp
+L power:GND #PWR?
+U 1 1 60C5779B
+P 5500 6800
+AR Path="/60BE0660/60C5779B" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C5779B" Ref="#PWR087"  Part="1" 
+F 0 "#PWR087" H 5500 6550 50  0001 C CNN
+F 1 "GND" H 5505 6627 50  0000 C CNN
+F 2 "" H 5500 6800 50  0001 C CNN
+F 3 "" H 5500 6800 50  0001 C CNN
+	1    5500 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6800 5500 6750
+Text GLabel 5700 6400 2    50   Input ~ 0
+IA0.3
+Wire Wire Line
+	5700 6400 5500 6400
+Connection ~ 5500 6400
+Wire Notes Line
+	750  3700 750  7150
+Wire Notes Line
+	750  7150 6000 7150
+Wire Notes Line
+	6000 7150 6000 3700
+Wire Notes Line
+	750  3700 6000 3700
+Wire Notes Line
+	750  650  750  3650
+Text Label 7150 1000 0    50   ~ 0
+I0
+Wire Wire Line
+	7150 1000 7100 1000
+Text Label 7150 1100 0    50   ~ 0
+I1
+Wire Wire Line
+	7150 1100 7100 1100
+Text Label 7150 1200 0    50   ~ 0
+I2
+Wire Wire Line
+	7150 1200 7100 1200
+Text Label 7150 1550 0    50   ~ 0
+I3
+Wire Wire Line
+	7150 1550 7100 1550
+Text Label 1250 1050 0    50   ~ 0
+I0
+Wire Wire Line
+	1250 1050 1250 1300
+Text Label 1250 2500 0    50   ~ 0
+I1
+Wire Wire Line
+	1250 2500 1250 2750
+Text Label 3100 1050 0    50   ~ 0
+I2
+Wire Wire Line
+	3100 1050 3100 1300
+Text Label 3100 2500 0    50   ~ 0
+I3
+Wire Wire Line
+	3100 2500 3100 2750
+Text Label 5300 3950 0    50   ~ 0
+A0
+Wire Wire Line
+	5300 3950 5250 3950
+Text Label 5300 4050 0    50   ~ 0
+A1
+Wire Wire Line
+	5300 4050 5250 4050
+Text Label 5300 4150 0    50   ~ 0
+A2
+Wire Wire Line
+	5300 4150 5250 4150
+Text Label 5300 4250 0    50   ~ 0
+A3
+Wire Wire Line
+	5300 4250 5250 4250
+Text Label 1400 4050 0    50   ~ 0
+A0
+Text Label 3800 4050 0    50   ~ 0
+A2
+Text Label 1400 5700 0    50   ~ 0
+A1
+Text Label 3800 5700 0    50   ~ 0
+A3
+$Comp
+L power:+10V #PWR077
+U 1 1 60D95D66
+P 3200 4100
+F 0 "#PWR077" H 3200 3950 50  0001 C CNN
+F 1 "+10V" H 3215 4273 50  0000 C CNN
+F 2 "" H 3200 4100 50  0001 C CNN
+F 3 "" H 3200 4100 50  0001 C CNN
+	1    3200 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 4050 1400 4600
+$Comp
+L Device:R R?
+U 1 1 60D9CB39
+P 2700 4900
+AR Path="/60BE0660/60D9CB39" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60D9CB39" Ref="R45"  Part="1" 
+F 0 "R45" H 2630 4854 50  0000 R CNN
+F 1 "R" H 2630 4945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2630 4900 50  0001 C CNN
+F 3 "~" H 2700 4900 50  0001 C CNN
+	1    2700 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 4750 2700 4700
+Connection ~ 2700 4700
+Wire Wire Line
+	2700 4700 2650 4700
+$Comp
+L power:GND #PWR?
+U 1 1 60C43F4B
+P 2950 5150
+AR Path="/60BE0660/60C43F4B" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60C43F4B" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 2950 4900 50  0001 C CNN
+F 1 "GND" H 2955 4977 50  0000 C CNN
+F 2 "" H 2950 5150 50  0001 C CNN
+F 3 "" H 2950 5150 50  0001 C CNN
+	1    2950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5200 5500 5150
+Wire Wire Line
+	5500 4850 5500 4800
+$Comp
+L Diode:1N47xxA D?
+U 1 1 60C43F9C
+P 5500 5000
+AR Path="/60BE0660/60C43F9C" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60C43F9C" Ref="D33"  Part="1" 
+F 0 "D33" V 5454 5079 50  0000 L CNN
+F 1 "1N47xxA" V 5545 5079 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5500 4825 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 5500 5000 50  0001 C CNN
+	1    5500 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 4800 5200 4800
+$Comp
+L Device:R R?
+U 1 1 60DBA038
+P 5200 4950
+AR Path="/60BE0660/60DBA038" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60DBA038" Ref="R53"  Part="1" 
+F 0 "R53" H 5130 4904 50  0000 R CNN
+F 1 "R" H 5130 4995 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 4950 50  0001 C CNN
+F 3 "~" H 5200 4950 50  0001 C CNN
+	1    5200 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DBA042
+P 5200 5200
+AR Path="/60BE0660/60DBA042" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60DBA042" Ref="#PWR082"  Part="1" 
+F 0 "#PWR082" H 5200 4950 50  0001 C CNN
+F 1 "GND" H 5205 5027 50  0000 C CNN
+F 2 "" H 5200 5200 50  0001 C CNN
+F 3 "" H 5200 5200 50  0001 C CNN
+	1    5200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5200 5200 5100
+Connection ~ 5200 4800
+Wire Wire Line
+	5200 4800 5100 4800
+Wire Wire Line
+	3800 4050 3800 4700
+Wire Wire Line
+	2950 5050 2950 5150
+$Comp
+L power:GND #PWR?
+U 1 1 60DC2DB4
+P 2700 5150
+AR Path="/60BE0660/60DC2DB4" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60DC2DB4" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 2700 4900 50  0001 C CNN
+F 1 "GND" H 2705 4977 50  0000 C CNN
+F 2 "" H 2700 5150 50  0001 C CNN
+F 3 "" H 2700 5150 50  0001 C CNN
+	1    2700 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5050 2700 5150
+$Comp
+L Device:R R?
+U 1 1 60DC90F1
+P 2750 6500
+AR Path="/60BE0660/60DC90F1" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60DC90F1" Ref="R46"  Part="1" 
+F 0 "R46" H 2680 6454 50  0000 R CNN
+F 1 "R" H 2680 6545 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 6500 50  0001 C CNN
+F 3 "~" H 2750 6500 50  0001 C CNN
+	1    2750 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DC90FB
+P 2750 6800
+AR Path="/60BE0660/60DC90FB" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60DC90FB" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 2750 6550 50  0001 C CNN
+F 1 "GND" H 2755 6627 50  0000 C CNN
+F 2 "" H 2750 6800 50  0001 C CNN
+F 3 "" H 2750 6800 50  0001 C CNN
+	1    2750 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 6800 2750 6650
+Connection ~ 2750 6350
+Wire Wire Line
+	2750 6350 2650 6350
+Wire Wire Line
+	1400 5700 1400 6250
+$Comp
+L Device:R R?
+U 1 1 60DD6E77
+P 5200 6550
+AR Path="/60BE0660/60DD6E77" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60DD6E77" Ref="R54"  Part="1" 
+F 0 "R54" H 5130 6504 50  0000 R CNN
+F 1 "R" H 5130 6595 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 6550 50  0001 C CNN
+F 3 "~" H 5200 6550 50  0001 C CNN
+	1    5200 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DD6E81
+P 5200 6800
+AR Path="/60BE0660/60DD6E81" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60DD6E81" Ref="#PWR083"  Part="1" 
+F 0 "#PWR083" H 5200 6550 50  0001 C CNN
+F 1 "GND" H 5205 6627 50  0000 C CNN
+F 2 "" H 5200 6800 50  0001 C CNN
+F 3 "" H 5200 6800 50  0001 C CNN
+	1    5200 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 6800 5200 6700
+Wire Wire Line
+	3800 5700 3800 6300
+Connection ~ 5200 6400
+Wire Wire Line
+	5200 6400 5100 6400
+Wire Wire Line
+	5200 6400 5500 6400
+$Comp
+L Isolator:PC817 U?
+U 1 1 60CCB0FD
+P 5750 1400
+AR Path="/60BE0660/60CCB0FD" Ref="U?"  Part="1" 
+AR Path="/60BE08C7/60CCB0FD" Ref="U23"  Part="1" 
+F 0 "U23" H 5750 1725 50  0000 C CNN
+F 1 "PC817" H 5750 1634 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 5550 1200 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5750 1400 50  0001 L CNN
+	1    5750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60CCB103
+P 6150 1000
+AR Path="/60BE0660/60CCB103" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60CCB103" Ref="#PWR088"  Part="1" 
+F 0 "#PWR088" H 6150 850 50  0001 C CNN
+F 1 "+5V" H 6165 1173 50  0000 C CNN
+F 2 "" H 6150 1000 50  0001 C CNN
+F 3 "" H 6150 1000 50  0001 C CNN
+	1    6150 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1300 6150 1300
+Wire Wire Line
+	6150 1300 6150 1000
+$Comp
+L Device:R R?
+U 1 1 60CCB10B
+P 5200 1300
+AR Path="/60BE0660/60CCB10B" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60CCB10B" Ref="R51"  Part="1" 
+F 0 "R51" V 4993 1300 50  0000 C CNN
+F 1 "R" V 5084 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 1300 50  0001 C CNN
+F 3 "~" H 5200 1300 50  0001 C CNN
+	1    5200 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1300 5450 1300
+Wire Wire Line
+	4900 1300 5050 1300
+$Comp
+L Device:LED D?
+U 1 1 60CCB113
+P 5250 1700
+AR Path="/60BE0660/60CCB113" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60CCB113" Ref="D31"  Part="1" 
+F 0 "D31" V 5289 1583 50  0000 R CNN
+F 1 "LED" V 5198 1583 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5250 1700 50  0001 C CNN
+F 3 "~" H 5250 1700 50  0001 C CNN
+	1    5250 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 1550 5250 1500
+Wire Wire Line
+	5250 1500 5450 1500
+$Comp
+L power:GND #PWR?
+U 1 1 60CCB11B
+P 5250 1950
+AR Path="/60BE0660/60CCB11B" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60CCB11B" Ref="#PWR084"  Part="1" 
+F 0 "#PWR084" H 5250 1700 50  0001 C CNN
+F 1 "GND" H 5255 1777 50  0000 C CNN
+F 2 "" H 5250 1950 50  0001 C CNN
+F 3 "" H 5250 1950 50  0001 C CNN
+	1    5250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1950 5250 1850
+Text GLabel 6250 1500 2    50   Input ~ 0
+I0.4
+Wire Wire Line
+	6250 1500 6050 1500
+$Comp
+L Isolator:PC817 U?
+U 1 1 60CCB124
+P 5750 2850
+AR Path="/60BE0660/60CCB124" Ref="U?"  Part="1" 
+AR Path="/60BE08C7/60CCB124" Ref="U24"  Part="1" 
+F 0 "U24" H 5750 3175 50  0000 C CNN
+F 1 "PC817" H 5750 3084 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 5550 2650 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5750 2850 50  0001 L CNN
+	1    5750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60CCB12A
+P 6150 2450
+AR Path="/60BE0660/60CCB12A" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60CCB12A" Ref="#PWR089"  Part="1" 
+F 0 "#PWR089" H 6150 2300 50  0001 C CNN
+F 1 "+5V" H 6165 2623 50  0000 C CNN
+F 2 "" H 6150 2450 50  0001 C CNN
+F 3 "" H 6150 2450 50  0001 C CNN
+	1    6150 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2750 6150 2750
+Wire Wire Line
+	6150 2750 6150 2450
+$Comp
+L Device:R R?
+U 1 1 60CCB132
+P 5200 2750
+AR Path="/60BE0660/60CCB132" Ref="R?"  Part="1" 
+AR Path="/60BE08C7/60CCB132" Ref="R52"  Part="1" 
+F 0 "R52" V 4993 2750 50  0000 C CNN
+F 1 "R" V 5084 2750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5130 2750 50  0001 C CNN
+F 3 "~" H 5200 2750 50  0001 C CNN
+	1    5200 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 2750 5450 2750
+Wire Wire Line
+	4900 2750 5050 2750
+$Comp
+L Device:LED D?
+U 1 1 60CCB13A
+P 5250 3150
+AR Path="/60BE0660/60CCB13A" Ref="D?"  Part="1" 
+AR Path="/60BE08C7/60CCB13A" Ref="D32"  Part="1" 
+F 0 "D32" V 5289 3033 50  0000 R CNN
+F 1 "LED" V 5198 3033 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5250 3150 50  0001 C CNN
+F 3 "~" H 5250 3150 50  0001 C CNN
+	1    5250 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 3000 5250 2950
+Wire Wire Line
+	5250 2950 5450 2950
+$Comp
+L power:GND #PWR?
+U 1 1 60CCB142
+P 5250 3400
+AR Path="/60BE0660/60CCB142" Ref="#PWR?"  Part="1" 
+AR Path="/60BE08C7/60CCB142" Ref="#PWR085"  Part="1" 
+F 0 "#PWR085" H 5250 3150 50  0001 C CNN
+F 1 "GND" H 5255 3227 50  0000 C CNN
+F 2 "" H 5250 3400 50  0001 C CNN
+F 3 "" H 5250 3400 50  0001 C CNN
+	1    5250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3400 5250 3300
+Text GLabel 6250 2950 2    50   Input ~ 0
+I0.5
+Wire Wire Line
+	6250 2950 6050 2950
+Text Label 4900 1050 0    50   ~ 0
+I4
+Wire Wire Line
+	4900 1050 4900 1300
+Text Label 4900 2500 0    50   ~ 0
+I5
+Wire Wire Line
+	4900 2500 4900 2750
+Text Label 7150 1650 0    50   ~ 0
+I4
+Text Label 7150 1750 0    50   ~ 0
+I5
+Wire Wire Line
+	7100 1650 7150 1650
+Wire Notes Line
+	7500 650  7500 3650
+Wire Notes Line
+	750  3650 7500 3650
+Wire Notes Line
+	750  650  7500 650 
+$Comp
+L Connector:Screw_Terminal_01x03 J20
+U 1 1 60E16731
+P 6900 1100
+F 0 "J20" H 6818 1417 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 6818 1326 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x03_P5.00mm_45-Degree" H 6900 1100 50  0001 C CNN
+F 3 "~" H 6900 1100 50  0001 C CNN
+	1    6900 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J21
+U 1 1 60E1885A
+P 6900 1650
+F 0 "J21" H 6818 1967 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 6818 1876 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x03_P5.00mm_45-Degree" H 6900 1650 50  0001 C CNN
+F 3 "~" H 6900 1650 50  0001 C CNN
+	1    6900 1650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1750 7100 1750
+$Comp
+L Connector:Screw_Terminal_01x04 J19
+U 1 1 60E2D617
+P 5050 4050
+F 0 "J19" H 4968 4367 50  0000 C CNN
+F 1 "Screw_Terminal_01x04" H 4968 4276 50  0000 C CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x04_P5.00mm_45-Degree" H 5050 4050 50  0001 C CNN
+F 3 "~" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	-1   0    0    -1  
+$EndComp
+$EndSCHEMATC

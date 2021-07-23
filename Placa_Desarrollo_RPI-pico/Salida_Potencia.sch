@@ -1,0 +1,882 @@
+EESchema Schematic File Version 4
+LIBS:Placa_Desarrollo_RPI-pico-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title "Placa_Desarrollo_RPI_pico"
+Date "2021-05-24"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 60AEC6BE
+P 3750 3600
+AR Path="/60AEC6BE" Ref="K?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6BE" Ref="K1"  Part="1" 
+F 0 "K1" H 4180 3646 50  0000 L CNN
+F 1 "DIPxx-1Cxx-51x" H 4180 3555 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 4200 3550 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 3750 3600 50  0001 C CNN
+	1    3750 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 3100 1    50   Input ~ 0
+5V
+Wire Wire Line
+	3550 3100 3550 3250
+$Comp
+L Diode:1N4007 D?
+U 1 1 60AEC6C6
+P 2950 3600
+AR Path="/60AEC6C6" Ref="D?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6C6" Ref="D5"  Part="1" 
+F 0 "D5" V 2904 3679 50  0000 L CNN
+F 1 "1N4007" V 2995 3679 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2950 3425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2950 3600 50  0001 C CNN
+	1    2950 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 3450 2950 3250
+Wire Wire Line
+	2950 3250 3550 3250
+Connection ~ 3550 3250
+Wire Wire Line
+	3550 3250 3550 3300
+Wire Wire Line
+	2950 3750 2950 3900
+Wire Wire Line
+	2950 3900 3550 3900
+$Comp
+L Isolator:PC817 U?
+U 1 1 60AEC6D2
+P 2550 4150
+AR Path="/60AEC6D2" Ref="U?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6D2" Ref="U4"  Part="1" 
+F 0 "U4" H 2550 4475 50  0000 C CNN
+F 1 "PC817" H 2550 4384 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 2350 3950 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2550 4150 50  0001 L CNN
+	1    2550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q?
+U 1 1 60AEC6D8
+P 3450 4250
+AR Path="/60AEC6D8" Ref="Q?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6D8" Ref="Q1"  Part="1" 
+F 0 "Q1" H 3641 4296 50  0000 L CNN
+F 1 "BC548" H 3641 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3650 4175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3450 4250 50  0001 L CNN
+	1    3450 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60AEC6DE
+P 3050 4250
+AR Path="/60AEC6DE" Ref="R?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6DE" Ref="R9"  Part="1" 
+F 0 "R9" V 2843 4250 50  0000 C CNN
+F 1 "R" V 2934 4250 50  0000 C CNN
+F 2 "" V 2980 4250 50  0001 C CNN
+F 3 "~" H 3050 4250 50  0001 C CNN
+	1    3050 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 4250 3250 4250
+Wire Wire Line
+	2850 4250 2900 4250
+Wire Wire Line
+	3550 4050 3550 3900
+Connection ~ 3550 3900
+$Comp
+L power:GND #PWR?
+U 1 1 60AEC6E8
+P 3550 4500
+AR Path="/60AEC6E8" Ref="#PWR?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6E8" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 3550 4250 50  0001 C CNN
+F 1 "GND" H 3555 4327 50  0000 C CNN
+F 2 "" H 3550 4500 50  0001 C CNN
+F 3 "" H 3550 4500 50  0001 C CNN
+	1    3550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4500 3550 4450
+Text GLabel 2850 3950 1    50   Input ~ 0
+5V
+Wire Wire Line
+	2850 3950 2850 4050
+$Comp
+L Device:LED D?
+U 1 1 60AEC6F1
+P 2250 4450
+AR Path="/60AEC6F1" Ref="D?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6F1" Ref="D8"  Part="1" 
+F 0 "D8" V 2289 4333 50  0000 R CNN
+F 1 "LED" V 2198 4333 50  0000 R CNN
+F 2 "" H 2250 4450 50  0001 C CNN
+F 3 "~" H 2250 4450 50  0001 C CNN
+	1    2250 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 4300 2250 4250
+$Comp
+L power:GND #PWR?
+U 1 1 60AEC6F8
+P 2250 4650
+AR Path="/60AEC6F8" Ref="#PWR?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6F8" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 2250 4400 50  0001 C CNN
+F 1 "GND" H 2255 4477 50  0000 C CNN
+F 2 "" H 2250 4650 50  0001 C CNN
+F 3 "" H 2250 4650 50  0001 C CNN
+	1    2250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4650 2250 4600
+$Comp
+L Device:R R?
+U 1 1 60AEC6FF
+P 2250 3850
+AR Path="/60AEC6FF" Ref="R?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC6FF" Ref="R6"  Part="1" 
+F 0 "R6" H 2180 3804 50  0000 R CNN
+F 1 "R" H 2180 3895 50  0000 R CNN
+F 2 "" V 2180 3850 50  0001 C CNN
+F 3 "~" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 4000 2250 4050
+Text Label 2250 3600 1    50   ~ 0
+Rele1
+Wire Wire Line
+	2250 3600 2250 3700
+Wire Wire Line
+	4300 3250 4300 3900
+Wire Wire Line
+	4300 3900 3950 3900
+Wire Wire Line
+	3950 3250 4300 3250
+Wire Wire Line
+	4050 3200 4050 3300
+Wire Wire Line
+	3950 3200 3950 3250
+Wire Wire Line
+	3850 3200 3850 3300
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 60AEC70E
+P 3950 3000
+AR Path="/60AEC70E" Ref="J?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC70E" Ref="J2"  Part="1" 
+F 0 "J2" V 4200 3050 50  0000 R CNN
+F 1 "Screw_Terminal_01x03" V 4100 3400 50  0000 R CNN
+F 2 "" H 3950 3000 50  0001 C CNN
+F 3 "~" H 3950 3000 50  0001 C CNN
+	1    3950 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 60AEC714
+P 6500 3650
+AR Path="/60AEC714" Ref="K?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC714" Ref="K2"  Part="1" 
+F 0 "K2" H 6930 3696 50  0000 L CNN
+F 1 "DIPxx-1Cxx-51x" H 6930 3605 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 6950 3600 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 6500 3650 50  0001 C CNN
+	1    6500 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 3150 1    50   Input ~ 0
+5V
+Wire Wire Line
+	6300 3150 6300 3300
+$Comp
+L Diode:1N4007 D?
+U 1 1 60AEC71C
+P 5700 3650
+AR Path="/60AEC71C" Ref="D?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC71C" Ref="D6"  Part="1" 
+F 0 "D6" V 5654 3729 50  0000 L CNN
+F 1 "1N4007" V 5745 3729 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5700 3475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5700 3650 50  0001 C CNN
+	1    5700 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3500 5700 3300
+Wire Wire Line
+	5700 3300 6300 3300
+Connection ~ 6300 3300
+Wire Wire Line
+	6300 3300 6300 3350
+Wire Wire Line
+	5700 3800 5700 3950
+Wire Wire Line
+	5700 3950 6300 3950
+$Comp
+L Isolator:PC817 U?
+U 1 1 60AEC728
+P 5300 4200
+AR Path="/60AEC728" Ref="U?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC728" Ref="U5"  Part="1" 
+F 0 "U5" H 5300 4525 50  0000 C CNN
+F 1 "PC817" H 5300 4434 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 5100 4000 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5300 4200 50  0001 L CNN
+	1    5300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q?
+U 1 1 60AEC72E
+P 6200 4300
+AR Path="/60AEC72E" Ref="Q?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC72E" Ref="Q2"  Part="1" 
+F 0 "Q2" H 6391 4346 50  0000 L CNN
+F 1 "BC548" H 6391 4255 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6400 4225 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6200 4300 50  0001 L CNN
+	1    6200 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60AEC734
+P 5800 4300
+AR Path="/60AEC734" Ref="R?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC734" Ref="R10"  Part="1" 
+F 0 "R10" V 5593 4300 50  0000 C CNN
+F 1 "R" V 5684 4300 50  0000 C CNN
+F 2 "" V 5730 4300 50  0001 C CNN
+F 3 "~" H 5800 4300 50  0001 C CNN
+	1    5800 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 4300 6000 4300
+Wire Wire Line
+	5600 4300 5650 4300
+Wire Wire Line
+	6300 4100 6300 3950
+Connection ~ 6300 3950
+$Comp
+L power:GND #PWR?
+U 1 1 60AEC73E
+P 6300 4550
+AR Path="/60AEC73E" Ref="#PWR?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC73E" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 6300 4300 50  0001 C CNN
+F 1 "GND" H 6305 4377 50  0000 C CNN
+F 2 "" H 6300 4550 50  0001 C CNN
+F 3 "" H 6300 4550 50  0001 C CNN
+	1    6300 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4550 6300 4500
+Text GLabel 5600 4000 1    50   Input ~ 0
+5V
+Wire Wire Line
+	5600 4000 5600 4100
+$Comp
+L Device:LED D?
+U 1 1 60AEC747
+P 5000 4500
+AR Path="/60AEC747" Ref="D?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC747" Ref="D9"  Part="1" 
+F 0 "D9" V 5039 4383 50  0000 R CNN
+F 1 "LED" V 4948 4383 50  0000 R CNN
+F 2 "" H 5000 4500 50  0001 C CNN
+F 3 "~" H 5000 4500 50  0001 C CNN
+	1    5000 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 4350 5000 4300
+$Comp
+L power:GND #PWR?
+U 1 1 60AEC74E
+P 5000 4700
+AR Path="/60AEC74E" Ref="#PWR?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC74E" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 5000 4450 50  0001 C CNN
+F 1 "GND" H 5005 4527 50  0000 C CNN
+F 2 "" H 5000 4700 50  0001 C CNN
+F 3 "" H 5000 4700 50  0001 C CNN
+	1    5000 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4700 5000 4650
+$Comp
+L Device:R R?
+U 1 1 60AEC755
+P 5000 3900
+AR Path="/60AEC755" Ref="R?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC755" Ref="R7"  Part="1" 
+F 0 "R7" H 4930 3854 50  0000 R CNN
+F 1 "R" H 4930 3945 50  0000 R CNN
+F 2 "" V 4930 3900 50  0001 C CNN
+F 3 "~" H 5000 3900 50  0001 C CNN
+	1    5000 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 4050 5000 4100
+Text Label 5000 3650 1    50   ~ 0
+Rele2
+Wire Wire Line
+	5000 3650 5000 3750
+Wire Wire Line
+	7050 3950 6700 3950
+Wire Wire Line
+	6700 3300 7050 3300
+Wire Wire Line
+	6800 3250 6800 3350
+Wire Wire Line
+	6700 3250 6700 3300
+Wire Wire Line
+	6600 3250 6600 3350
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 60AEC763
+P 6700 3050
+AR Path="/60AEC763" Ref="J?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60AEC763" Ref="J3"  Part="1" 
+F 0 "J3" V 6950 3100 50  0000 R CNN
+F 1 "Screw_Terminal_01x03" V 6850 3450 50  0000 R CNN
+F 2 "" H 6700 3050 50  0001 C CNN
+F 3 "~" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7050 3300 7050 3950
+$Comp
+L Triac_Thyristor:BT138-800 Q4
+U 1 1 60AEE6FB
+P 6000 5900
+F 0 "Q4" H 6128 5946 50  0000 L CNN
+F 1 "BT138-800" H 6128 5855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6200 5825 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 6000 5900 50  0001 L CNN
+	1    6000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay_SolidState:MOC3021M U7
+U 1 1 60AEFD08
+P 5000 5850
+F 0 "U7" H 5000 6175 50  0000 C CNN
+F 1 "MOC3021M" H 5000 6084 50  0000 C CNN
+F 2 "" H 4800 5650 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/MO/MOC3020M.pdf" H 4975 5850 50  0001 L CNN
+	1    5000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 60AF1047
+P 5600 5750
+F 0 "R13" V 5807 5750 50  0000 C CNN
+F 1 "R" V 5716 5750 50  0000 C CNN
+F 2 "" V 5530 5750 50  0001 C CNN
+F 3 "~" H 5600 5750 50  0001 C CNN
+	1    5600 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5450 5750 5300 5750
+Wire Wire Line
+	6000 5750 5750 5750
+Wire Wire Line
+	5850 6000 5850 5950
+Wire Wire Line
+	5850 5950 5300 5950
+$Comp
+L power:GND #PWR0114
+U 1 1 60AF3E8E
+P 4650 6350
+F 0 "#PWR0114" H 4650 6100 50  0001 C CNN
+F 1 "GND" H 4655 6177 50  0000 C CNN
+F 2 "" H 4650 6350 50  0001 C CNN
+F 3 "" H 4650 6350 50  0001 C CNN
+	1    4650 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 6000 4650 5950
+Wire Wire Line
+	4650 5950 4700 5950
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 60AF6089
+P 6500 5550
+F 0 "J5" V 6700 5550 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 6600 5900 50  0000 R CNN
+F 2 "" H 6500 5550 50  0001 C CNN
+F 3 "~" H 6500 5550 50  0001 C CNN
+	1    6500 5550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 5750 6000 5750
+Connection ~ 6000 5750
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 60AF7962
+P 7100 5850
+F 0 "J6" H 7180 5842 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7180 5751 50  0000 L CNN
+F 2 "" H 7100 5850 50  0001 C CNN
+F 3 "~" H 7100 5850 50  0001 C CNN
+	1    7100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5850 6900 5750
+Wire Wire Line
+	6900 5750 6600 5750
+Wire Wire Line
+	6900 5950 6900 6050
+Wire Wire Line
+	6900 6050 6000 6050
+$Comp
+L Device:R R12
+U 1 1 60AFEC6C
+P 4450 5750
+F 0 "R12" V 4657 5750 50  0000 C CNN
+F 1 "R" V 4566 5750 50  0000 C CNN
+F 2 "" V 4380 5750 50  0001 C CNN
+F 3 "~" H 4450 5750 50  0001 C CNN
+	1    4450 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 5750 4700 5750
+Text Label 4250 5750 2    50   ~ 0
+Rele_SS_1
+Wire Wire Line
+	4250 5750 4300 5750
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 60B059F1
+P 9500 3700
+AR Path="/60B059F1" Ref="K?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B059F1" Ref="K3"  Part="1" 
+F 0 "K3" H 9930 3746 50  0000 L CNN
+F 1 "DIPxx-1Cxx-51x" H 9930 3655 50  0000 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 9950 3650 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 9500 3700 50  0001 C CNN
+	1    9500 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 9300 3200 1    50   Input ~ 0
+5V
+Wire Wire Line
+	9300 3200 9300 3350
+$Comp
+L Diode:1N4007 D?
+U 1 1 60B059F9
+P 8700 3700
+AR Path="/60B059F9" Ref="D?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B059F9" Ref="D7"  Part="1" 
+F 0 "D7" V 8654 3779 50  0000 L CNN
+F 1 "1N4007" V 8745 3779 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8700 3525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8700 3700 50  0001 C CNN
+	1    8700 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 3550 8700 3350
+Wire Wire Line
+	8700 3350 9300 3350
+Connection ~ 9300 3350
+Wire Wire Line
+	9300 3350 9300 3400
+Wire Wire Line
+	8700 3850 8700 4000
+Wire Wire Line
+	8700 4000 9300 4000
+$Comp
+L Isolator:PC817 U?
+U 1 1 60B05A05
+P 8300 4250
+AR Path="/60B05A05" Ref="U?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B05A05" Ref="U6"  Part="1" 
+F 0 "U6" H 8300 4575 50  0000 C CNN
+F 1 "PC817" H 8300 4484 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 8100 4050 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 8300 4250 50  0001 L CNN
+	1    8300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q?
+U 1 1 60B05A0B
+P 9200 4350
+AR Path="/60B05A0B" Ref="Q?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B05A0B" Ref="Q3"  Part="1" 
+F 0 "Q3" H 9391 4396 50  0000 L CNN
+F 1 "BC548" H 9391 4305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 4275 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 9200 4350 50  0001 L CNN
+	1    9200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60B05A11
+P 8800 4350
+AR Path="/60B05A11" Ref="R?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B05A11" Ref="R11"  Part="1" 
+F 0 "R11" V 8593 4350 50  0000 C CNN
+F 1 "R" V 8684 4350 50  0000 C CNN
+F 2 "" V 8730 4350 50  0001 C CNN
+F 3 "~" H 8800 4350 50  0001 C CNN
+	1    8800 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 4350 9000 4350
+Wire Wire Line
+	8600 4350 8650 4350
+Wire Wire Line
+	9300 4150 9300 4000
+Connection ~ 9300 4000
+$Comp
+L power:GND #PWR?
+U 1 1 60B05A1B
+P 9300 4600
+AR Path="/60B05A1B" Ref="#PWR?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B05A1B" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 9300 4350 50  0001 C CNN
+F 1 "GND" H 9305 4427 50  0000 C CNN
+F 2 "" H 9300 4600 50  0001 C CNN
+F 3 "" H 9300 4600 50  0001 C CNN
+	1    9300 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4600 9300 4550
+Text GLabel 8600 4050 1    50   Input ~ 0
+5V
+Wire Wire Line
+	8600 4050 8600 4150
+$Comp
+L Device:LED D?
+U 1 1 60B05A24
+P 8000 4550
+AR Path="/60B05A24" Ref="D?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B05A24" Ref="D10"  Part="1" 
+F 0 "D10" V 8039 4433 50  0000 R CNN
+F 1 "LED" V 7948 4433 50  0000 R CNN
+F 2 "" H 8000 4550 50  0001 C CNN
+F 3 "~" H 8000 4550 50  0001 C CNN
+	1    8000 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8000 4400 8000 4350
+$Comp
+L power:GND #PWR?
+U 1 1 60B05A2B
+P 8000 4750
+AR Path="/60B05A2B" Ref="#PWR?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B05A2B" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 8000 4500 50  0001 C CNN
+F 1 "GND" H 8005 4577 50  0000 C CNN
+F 2 "" H 8000 4750 50  0001 C CNN
+F 3 "" H 8000 4750 50  0001 C CNN
+	1    8000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4750 8000 4700
+$Comp
+L Device:R R?
+U 1 1 60B05A32
+P 8000 3950
+AR Path="/60B05A32" Ref="R?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B05A32" Ref="R8"  Part="1" 
+F 0 "R8" H 7930 3904 50  0000 R CNN
+F 1 "R" H 7930 3995 50  0000 R CNN
+F 2 "" V 7930 3950 50  0001 C CNN
+F 3 "~" H 8000 3950 50  0001 C CNN
+	1    8000 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 4100 8000 4150
+Text Label 8000 3700 1    50   ~ 0
+Rele3
+Wire Wire Line
+	8000 3700 8000 3800
+Wire Wire Line
+	10050 4000 9700 4000
+Wire Wire Line
+	9700 3350 10050 3350
+Wire Wire Line
+	9800 3300 9800 3400
+Wire Wire Line
+	9700 3300 9700 3350
+Wire Wire Line
+	9600 3300 9600 3400
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 60B05A40
+P 9700 3100
+AR Path="/60B05A40" Ref="J?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B05A40" Ref="J4"  Part="1" 
+F 0 "J4" V 9950 3150 50  0000 R CNN
+F 1 "Screw_Terminal_01x03" V 9850 3500 50  0000 R CNN
+F 2 "" H 9700 3100 50  0001 C CNN
+F 3 "~" H 9700 3100 50  0001 C CNN
+	1    9700 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 3350 10050 4000
+$Comp
+L Interface_Expansion:PCF8574 U3
+U 1 1 60B269D4
+P 6350 1700
+F 0 "U3" H 6350 2581 50  0000 C CNN
+F 1 "PCF8574" H 6350 2490 50  0000 C CNN
+F 2 "" H 6350 1700 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 6350 1700 50  0001 C CNN
+	1    6350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 60B35815
+P 6350 2450
+F 0 "#PWR0117" H 6350 2200 50  0001 C CNN
+F 1 "GND" H 6355 2277 50  0000 C CNN
+F 2 "" H 6350 2450 50  0001 C CNN
+F 3 "" H 6350 2450 50  0001 C CNN
+	1    6350 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2450 6350 2400
+$Comp
+L Device:LED D?
+U 1 1 60B39889
+P 4650 6150
+AR Path="/60B39889" Ref="D?"  Part="1" 
+AR Path="/60AC5EDA/60AD2F6B/60B39889" Ref="D11"  Part="1" 
+F 0 "D11" V 4689 6033 50  0000 R CNN
+F 1 "LED" V 4598 6033 50  0000 R CNN
+F 2 "" H 4650 6150 50  0001 C CNN
+F 3 "~" H 4650 6150 50  0001 C CNN
+	1    4650 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 6350 4650 6300
+Text GLabel 5700 1300 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	5700 1300 5850 1300
+Text GLabel 5700 1400 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	5700 1400 5850 1400
+Text Label 6900 1300 0    50   ~ 0
+Rele1
+Wire Wire Line
+	6900 1300 6850 1300
+Text Label 6900 1400 0    50   ~ 0
+Rele2
+Wire Wire Line
+	6900 1400 6850 1400
+Text Label 6900 1500 0    50   ~ 0
+Rele3
+Wire Wire Line
+	6900 1500 6850 1500
+Text Label 6900 1600 0    50   ~ 0
+Rele_SS_1
+Wire Wire Line
+	6900 1600 6850 1600
+$Comp
+L Jumper:Jumper_2_Open JP4
+U 1 1 60B4B191
+P 4200 1950
+F 0 "JP4" H 4200 2185 50  0000 C CNN
+F 1 "Jumper_2_Open" H 4200 2094 50  0000 C CNN
+F 2 "" H 4200 1950 50  0001 C CNN
+F 3 "~" H 4200 1950 50  0001 C CNN
+	1    4200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60B4C0B1
+P 4500 2100
+F 0 "R3" H 4570 2146 50  0000 L CNN
+F 1 "R" H 4570 2055 50  0000 L CNN
+F 2 "" V 4430 2100 50  0001 C CNN
+F 3 "~" H 4500 2100 50  0001 C CNN
+	1    4500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60B4D20B
+P 4750 2100
+F 0 "R4" H 4820 2146 50  0000 L CNN
+F 1 "R" H 4820 2055 50  0000 L CNN
+F 2 "" V 4680 2100 50  0001 C CNN
+F 3 "~" H 4750 2100 50  0001 C CNN
+	1    4750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 60B4D3FC
+P 5000 2100
+F 0 "R5" H 5070 2146 50  0000 L CNN
+F 1 "R" H 5070 2055 50  0000 L CNN
+F 2 "" V 4930 2100 50  0001 C CNN
+F 3 "~" H 5000 2100 50  0001 C CNN
+	1    5000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 60B50E2D
+P 4500 2300
+F 0 "#PWR0118" H 4500 2050 50  0001 C CNN
+F 1 "GND" H 4505 2127 50  0000 C CNN
+F 2 "" H 4500 2300 50  0001 C CNN
+F 3 "" H 4500 2300 50  0001 C CNN
+	1    4500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2300 4500 2250
+Wire Wire Line
+	4500 2250 4750 2250
+Connection ~ 4500 2250
+Wire Wire Line
+	4750 2250 5000 2250
+Connection ~ 4750 2250
+Wire Wire Line
+	4400 1950 4500 1950
+$Comp
+L Jumper:Jumper_2_Open JP3
+U 1 1 60B5A28C
+P 4200 1600
+F 0 "JP3" H 4200 1835 50  0000 C CNN
+F 1 "Jumper_2_Open" H 4200 1744 50  0000 C CNN
+F 2 "" H 4200 1600 50  0001 C CNN
+F 3 "~" H 4200 1600 50  0001 C CNN
+	1    4200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 60B5A704
+P 4200 1250
+F 0 "JP2" H 4200 1485 50  0000 C CNN
+F 1 "Jumper_2_Open" H 4200 1394 50  0000 C CNN
+F 2 "" H 4200 1250 50  0001 C CNN
+F 3 "~" H 4200 1250 50  0001 C CNN
+	1    4200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1600 4750 1600
+Wire Wire Line
+	4750 1600 4750 1950
+Wire Wire Line
+	4400 1250 5000 1250
+Wire Wire Line
+	5000 1250 5000 1950
+Text Label 4550 1950 0    50   ~ 0
+A0
+Wire Wire Line
+	4550 1950 4500 1950
+Connection ~ 4500 1950
+Text Label 4800 1950 0    50   ~ 0
+A1
+Wire Wire Line
+	4800 1950 4750 1950
+Connection ~ 4750 1950
+Text Label 5050 1950 0    50   ~ 0
+A2
+Wire Wire Line
+	5050 1950 5000 1950
+Connection ~ 5000 1950
+Text GLabel 3800 1250 0    50   Input ~ 0
+5V
+Wire Wire Line
+	3800 1250 3850 1250
+Wire Wire Line
+	4000 1600 3850 1600
+Wire Wire Line
+	3850 1600 3850 1250
+Connection ~ 3850 1250
+Wire Wire Line
+	3850 1250 4000 1250
+Wire Wire Line
+	4000 1950 3850 1950
+Wire Wire Line
+	3850 1950 3850 1600
+Connection ~ 3850 1600
+Text Label 5800 1600 2    50   ~ 0
+A0
+Wire Wire Line
+	5800 1600 5850 1600
+Text Label 5800 1700 2    50   ~ 0
+A1
+Wire Wire Line
+	5800 1700 5850 1700
+Text Label 5800 1800 2    50   ~ 0
+A2
+Wire Wire Line
+	5800 1800 5850 1800
+NoConn ~ 5850 2100
+NoConn ~ 6850 1700
+NoConn ~ 6850 1800
+NoConn ~ 6850 1900
+NoConn ~ 6850 2000
+$Comp
+L power:+5V #PWR0166
+U 1 1 60B67D4D
+P 6700 1000
+F 0 "#PWR0166" H 6700 850 50  0001 C CNN
+F 1 "+5V" H 6715 1173 50  0000 C CNN
+F 2 "" H 6700 1000 50  0001 C CNN
+F 3 "" H 6700 1000 50  0001 C CNN
+	1    6700 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1000 6700 1000
+$EndSCHEMATC
