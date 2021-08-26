@@ -1,0 +1,145 @@
+
+(rules PCB Plc_Esp12
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2692)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
+    )
+  )
+  (rule
+    (width 500.0)
+    (clear 200.2)
+    (clear 250.0 (type smd_to_turn_gap))
+    (clear 250.2 (type default_RELE))
+    (clear 50.0 (type smd_smd))
+    (clear 250.2 (type smd_RELE))
+    (clear 250.2 (type "kicad_default"_RELE))
+    (clear 250.2 (type RELE_RELE))
+    (clear 250.2 (type RELE_TRIAC))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1300:500_um"
+    (shape
+      (circle F.Cu 1300.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1300.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_1300:500_um" "Via[0-1]_1300:500_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1300:500_um-kicad_default" "Via[0-1]_1300:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-RELE" "Via[0-1]_800:400_um" RELE
+  )
+  (via 
+    "Via[0-1]_1300:500_um-RELE" "Via[0-1]_1300:500_um" RELE
+  )
+  (via 
+    "Via[0-1]_800:400_um-TRIAC" "Via[0-1]_800:400_um" TRIAC
+  )
+  (via 
+    "Via[0-1]_1300:500_um-TRIAC" "Via[0-1]_1300:500_um" TRIAC
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    RELE "Via[0-1]_1300:500_um-RELE"
+  )
+  (via_rule
+    TRIAC "Via[0-1]_800:400_um-TRIAC"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D1-Pad2)" GND "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" +5V "Net-(D6-Pad2)"
+    "Net-(D7-Pad2)" "Net-(D8-Pad2)" "Net-(D9-Pad2)" "Net-(D10-Pad2)" "Net-(JP1-Pad3)" /GPIO0 "Net-(Q1-Pad3)" "Net-(Q2-Pad3)"
+    "Net-(Q3-Pad2)" "Net-(Q4-Pad2)" "Net-(Q5-Pad2)" "Net-(Q6-Pad2)" "Net-(R1-Pad2)" +3V3 "Net-(R3-Pad2)" "Net-(R4-Pad1)"
+    /I0.4 "Net-(R5-Pad1)" /I0.5 "Net-(R6-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad1)" "Net-(R9-Pad2)" "Net-(R10-Pad2)"
+    "Net-(R11-Pad2)" "Net-(R12-Pad2)" "Net-(R13-Pad1)" "Net-(R14-Pad1)" "Net-(R15-Pad2)" "Net-(R16-Pad2)" "Net-(U1-Pad5)" "Net-(U1-Pad6)"
+    /RXD "Net-(U1-Pad9)" /TXD /I0.1 /I0.0 "Net-(U2-Pad14)" "Net-(U2-Pad13)" "Net-(U2-Pad10)"
+    "Net-(U2-Pad9)" /I0.3 /I0.2 "Net-(U2-Pad1)" "Net-(U6-Pad3)" "Net-(U6-Pad5)" "Net-(U7-Pad3)" "Net-(U7-Pad5)"
+    "Net-(U1-Pad3)" "Net-(U1-Pad2)" "Net-(U?1-Pad4)" /SCL /SDA /ADC1 "Net-(JP2-Pad1)" "Net-(J1-Pad10)"
+    "Net-(J1-Pad9)" "Net-(J1-Pad8)" "Net-(J1-Pad7)" "Net-(J1-Pad6)" "Net-(J1-Pad5)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class RELE
+    "Net-(J2-Pad3)" "Net-(J2-Pad2)" "Net-(J2-Pad1)" "Net-(J3-Pad3)" "Net-(J3-Pad2)" "Net-(J3-Pad1)" "Net-(J5-Pad3)" "Net-(J5-Pad2)"
+    "Net-(J5-Pad1)" "Net-(J6-Pad3)" "Net-(J6-Pad2)" "Net-(J6-Pad1)"
+    (clearance_class RELE)
+    (via_rule RELE)
+    (rule
+      (width 3000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class TRIAC
+    "Net-(J4-Pad3)" "Net-(J4-Pad2)" "Net-(J4-Pad1)"
+    (clearance_class TRIAC)
+    (via_rule TRIAC)
+    (rule
+      (width 2000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
