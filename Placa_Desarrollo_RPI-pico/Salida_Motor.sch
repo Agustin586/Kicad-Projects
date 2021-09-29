@@ -15,645 +15,265 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Placa_Desarrollo_RPI-pico-cache:BC548 Q6
-U 1 1 60BE3FCF
-P 4650 2550
-F 0 "Q6" H 4841 2596 50  0000 L CNN
-F 1 "BC548" H 4841 2505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 2475 50  0001 L CIN
-F 3 "" H 4650 2550 50  0001 L CNN
-	1    4650 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Placa_Desarrollo_RPI-pico-cache:BC548 Q9
-U 1 1 60BE46E1
-P 4650 3300
-F 0 "Q9" H 4841 3346 50  0000 L CNN
-F 1 "BC548" H 4841 3255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 3225 50  0001 L CIN
-F 3 "" H 4650 3300 50  0001 L CNN
-	1    4650 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Placa_Desarrollo_RPI-pico-cache:BC548 Q10
-U 1 1 60BE4C23
-P 4650 4050
-F 0 "Q10" H 4841 4096 50  0000 L CNN
-F 1 "BC548" H 4841 4005 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 3975 50  0001 L CIN
-F 3 "" H 4650 4050 50  0001 L CNN
-	1    4650 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Placa_Desarrollo_RPI-pico-cache:BC548 Q13
-U 1 1 60BE537B
-P 4650 4800
-F 0 "Q13" H 4841 4846 50  0000 L CNN
-F 1 "BC548" H 4841 4755 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4850 4725 50  0001 L CIN
-F 3 "" H 4650 4800 50  0001 L CNN
-	1    4650 4800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R26
-U 1 1 60BE5A4E
-P 4200 2550
-F 0 "R26" V 3993 2550 50  0000 C CNN
-F 1 "R" V 4084 2550 50  0000 C CNN
-F 2 "" V 4130 2550 50  0001 C CNN
-F 3 "~" H 4200 2550 50  0001 C CNN
-	1    4200 2550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R29
-U 1 1 60BE5C20
-P 4200 3300
-F 0 "R29" V 3993 3300 50  0000 C CNN
-F 1 "R" V 4084 3300 50  0000 C CNN
-F 2 "" V 4130 3300 50  0001 C CNN
-F 3 "~" H 4200 3300 50  0001 C CNN
-	1    4200 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R30
-U 1 1 60BE5EB4
-P 4200 4050
-F 0 "R30" V 3993 4050 50  0000 C CNN
-F 1 "R" V 4084 4050 50  0000 C CNN
-F 2 "" V 4130 4050 50  0001 C CNN
-F 3 "~" H 4200 4050 50  0001 C CNN
-	1    4200 4050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R33
-U 1 1 60BE60BF
-P 4200 4800
-F 0 "R33" V 3993 4800 50  0000 C CNN
-F 1 "R" V 4084 4800 50  0000 C CNN
-F 2 "" V 4130 4800 50  0001 C CNN
-F 3 "~" H 4200 4800 50  0001 C CNN
-	1    4200 4800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 2550 4450 2550
-Wire Wire Line
-	4450 3300 4350 3300
-Wire Wire Line
-	4350 4050 4450 4050
-Wire Wire Line
-	4350 4800 4450 4800
-Wire Wire Line
-	4050 2550 3800 2550
-Wire Wire Line
-	3800 2550 3800 3250
-Wire Wire Line
-	3800 4050 4050 4050
-Wire Wire Line
-	4050 3300 3900 3300
-Wire Wire Line
-	4750 2300 4750 2350
-Wire Wire Line
-	4750 3050 4750 3100
-Wire Wire Line
-	4750 3800 4750 3850
-Wire Wire Line
-	4750 4550 4750 4600
-Wire Wire Line
-	4050 4800 3900 4800
-Wire Wire Line
-	3900 3300 3900 4150
-$Comp
 L Placa_Desarrollo_RPI-pico-rescue:IRF540NPBF-dk_Transistors-FETs-MOSFETs-Single Q?
 U 1 1 60BE8DEA
-P 6350 2650
+P 4600 3000
 AR Path="/60BE8DEA" Ref="Q?"  Part="1" 
 AR Path="/60AC5EDA/60BE3D74/60BE8DEA" Ref="Q7"  Part="1" 
-F 0 "Q7" H 5950 2850 60  0000 L CNN
-F 1 "IRF540NPBF" V 6550 2300 60  0000 L CNN
-F 2 "digikey-footprints:TO-220-3" H 6550 2850 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 6550 2950 60  0001 L CNN
-F 4 "IRF540NPBF-ND" H 6550 3050 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRF540NPBF" H 6550 3150 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6550 3250 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 6550 3350 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 6550 3450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRF540NPBF/IRF540NPBF-ND/811869" H 6550 3550 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 100V 33A TO-220AB" H 6550 3650 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 6550 3750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6550 3850 60  0001 L CNN "Status"
-	1    6350 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Placa_Desarrollo_RPI-pico-rescue:IRF540NPBF-dk_Transistors-FETs-MOSFETs-Single Q?
-U 1 1 60BEB7D9
-P 9100 2650
-AR Path="/60BEB7D9" Ref="Q?"  Part="1" 
-AR Path="/60AC5EDA/60BE3D74/60BEB7D9" Ref="Q8"  Part="1" 
-F 0 "Q8" H 9208 2703 60  0000 L CNN
-F 1 "IRF540NPBF" H 9208 2597 60  0000 L CNN
-F 2 "digikey-footprints:TO-220-3" H 9300 2850 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 9300 2950 60  0001 L CNN
-F 4 "IRF540NPBF-ND" H 9300 3050 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRF540NPBF" H 9300 3150 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 9300 3250 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 9300 3350 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 9300 3450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRF540NPBF/IRF540NPBF-ND/811869" H 9300 3550 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 100V 33A TO-220AB" H 9300 3650 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 9300 3750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9300 3850 60  0001 L CNN "Status"
-	1    9100 2650
+F 0 "Q7" H 4300 3100 60  0000 L CNN
+F 1 "IRF540NPBF" V 4800 2650 60  0000 L CNN
+F 2 "digikey-footprints:TO-220-3" H 4800 3200 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 4800 3300 60  0001 L CNN
+F 4 "IRF540NPBF-ND" H 4800 3400 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRF540NPBF" H 4800 3500 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4800 3600 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4800 3700 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 4800 3800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRF540NPBF/IRF540NPBF-ND/811869" H 4800 3900 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 100V 33A TO-220AB" H 4800 4000 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 4800 4100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4800 4200 60  0001 L CNN "Status"
+	1    4600 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Placa_Desarrollo_RPI-pico-rescue:IRF540NPBF-dk_Transistors-FETs-MOSFETs-Single Q?
 U 1 1 60BEBECE
-P 6350 4150
+P 4550 4850
 AR Path="/60BEBECE" Ref="Q?"  Part="1" 
 AR Path="/60AC5EDA/60BE3D74/60BEBECE" Ref="Q11"  Part="1" 
-F 0 "Q11" H 5950 4300 60  0000 L CNN
-F 1 "IRF540NPBF" V 6500 3800 60  0000 L CNN
-F 2 "digikey-footprints:TO-220-3" H 6550 4350 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 6550 4450 60  0001 L CNN
-F 4 "IRF540NPBF-ND" H 6550 4550 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRF540NPBF" H 6550 4650 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 6550 4750 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 6550 4850 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 6550 4950 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRF540NPBF/IRF540NPBF-ND/811869" H 6550 5050 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 100V 33A TO-220AB" H 6550 5150 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 6550 5250 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6550 5350 60  0001 L CNN "Status"
-	1    6350 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Placa_Desarrollo_RPI-pico-rescue:IRF540NPBF-dk_Transistors-FETs-MOSFETs-Single Q?
-U 1 1 60BEC92F
-P 9100 4150
-AR Path="/60BEC92F" Ref="Q?"  Part="1" 
-AR Path="/60AC5EDA/60BE3D74/60BEC92F" Ref="Q12"  Part="1" 
-F 0 "Q12" H 9208 4203 60  0000 L CNN
-F 1 "IRF540NPBF" H 9208 4097 60  0000 L CNN
-F 2 "digikey-footprints:TO-220-3" H 9300 4350 60  0001 L CNN
-F 3 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 9300 4450 60  0001 L CNN
-F 4 "IRF540NPBF-ND" H 9300 4550 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRF540NPBF" H 9300 4650 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 9300 4750 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 9300 4850 60  0001 L CNN "Family"
-F 8 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 9300 4950 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/infineon-technologies/IRF540NPBF/IRF540NPBF-ND/811869" H 9300 5050 60  0001 L CNN "DK_Detail_Page"
-F 10 "MOSFET N-CH 100V 33A TO-220AB" H 9300 5150 60  0001 L CNN "Description"
-F 11 "Infineon Technologies" H 9300 5250 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 9300 5350 60  0001 L CNN "Status"
-	1    9100 4150
+F 0 "Q11" H 4150 4950 60  0000 L CNN
+F 1 "IRF540NPBF" V 4700 4500 60  0000 L CNN
+F 2 "digikey-footprints:TO-220-3" H 4750 5050 60  0001 L CNN
+F 3 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 4750 5150 60  0001 L CNN
+F 4 "IRF540NPBF-ND" H 4750 5250 60  0001 L CNN "Digi-Key_PN"
+F 5 "IRF540NPBF" H 4750 5350 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4750 5450 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 4750 5550 60  0001 L CNN "Family"
+F 8 "https://www.infineon.com/dgdl/irf540npbf.pdf?fileId=5546d462533600a4015355e39f0d19a1" H 4750 5650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/infineon-technologies/IRF540NPBF/IRF540NPBF-ND/811869" H 4750 5750 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 100V 33A TO-220AB" H 4750 5850 60  0001 L CNN "Description"
+F 11 "Infineon Technologies" H 4750 5950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4750 6050 60  0001 L CNN "Status"
+	1    4550 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J12
 U 1 1 60BED934
-P 7400 3350
-F 0 "J12" V 7100 3350 50  0000 R CNN
-F 1 "Screw_Terminal_01x02" V 7000 3700 50  0000 R CNN
-F 2 "" H 7400 3350 50  0001 C CNN
-F 3 "~" H 7400 3350 50  0001 C CNN
-	1    7400 3350
-	0    -1   -1   0   
+P 6150 2550
+F 0 "J12" H 6350 2500 50  0000 R CNN
+F 1 "Terminal M1" H 6400 2350 50  0000 R CNN
+F 2 "" H 6150 2550 50  0001 C CNN
+F 3 "~" H 6150 2550 50  0001 C CNN
+	1    6150 2550
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 2850 9100 3550
-Wire Wire Line
-	6350 2850 6350 3550
-Wire Wire Line
-	6350 3550 6750 3550
-Connection ~ 6350 3550
-Wire Wire Line
-	6350 3550 6350 3950
-Wire Wire Line
-	7500 3550 8050 3550
-Connection ~ 9100 3550
-Wire Wire Line
-	9100 3550 9100 3950
 $Comp
 L power:GND #PWR0148
 U 1 1 60BF239F
-P 7100 5050
-F 0 "#PWR0148" H 7100 4800 50  0001 C CNN
-F 1 "GND" H 7105 4877 50  0000 C CNN
-F 2 "" H 7100 5050 50  0001 C CNN
-F 3 "" H 7100 5050 50  0001 C CNN
-	1    7100 5050
+P 4550 5350
+F 0 "#PWR0148" H 4550 5100 50  0001 C CNN
+F 1 "GND" H 4555 5177 50  0000 C CNN
+F 2 "" H 4550 5350 50  0001 C CNN
+F 3 "" H 4550 5350 50  0001 C CNN
+	1    4550 5350
 	1    0    0    -1  
 $EndComp
-Text Label 5800 2750 2    50   ~ 0
-Mosfet_1
-Text Label 8700 2750 2    50   ~ 0
-Mosfet_2
-Text Label 5950 4250 2    50   ~ 0
-Mosfet_3
-Text Label 8700 4250 2    50   ~ 0
-Mosfet_4
-Text Label 4800 2800 0    50   ~ 0
-Mosfet_1
-Wire Wire Line
-	4800 2800 4750 2800
-Wire Wire Line
-	4750 2800 4750 2750
-Text Label 4800 3550 0    50   ~ 0
-Mosfet_2
-Wire Wire Line
-	4800 3550 4750 3550
-Wire Wire Line
-	4750 3550 4750 3500
-Text Label 4800 4300 0    50   ~ 0
-Mosfet_3
-Wire Wire Line
-	4800 4300 4750 4300
-Wire Wire Line
-	4750 4300 4750 4250
-Text Label 4800 5050 0    50   ~ 0
-Mosfet_4
-Wire Wire Line
-	4800 5050 4750 5050
-Wire Wire Line
-	4750 5050 4750 5000
-Connection ~ 3800 3250
-Wire Wire Line
-	3800 3250 3800 4050
-Connection ~ 3900 4150
-Wire Wire Line
-	3900 4150 3900 4800
-$Comp
-L Amplifier_Operational:LM358 U9
-U 1 1 60BFE573
-P 3000 3250
-F 0 "U9" H 3000 3617 50  0000 C CNN
-F 1 "LM358" H 3000 3526 50  0000 C CNN
-F 2 "" H 3000 3250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3000 3250 50  0001 C CNN
-	1    3000 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LM358 U9
-U 2 1 60C00D40
-P 3000 4150
-F 0 "U9" H 3000 4517 50  0000 C CNN
-F 1 "LM358" H 3000 4426 50  0000 C CNN
-F 2 "" H 3000 4150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3000 4150 50  0001 C CNN
-	2    3000 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:LM358 U9
-U 3 1 60C02B67
-P 2950 2550
-F 0 "U9" V 2625 2550 50  0000 C CNN
-F 1 "LM358" V 2716 2550 50  0000 C CNN
-F 2 "" H 2950 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 2950 2550 50  0001 C CNN
-	3    2950 2550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2700 3350 2700 3550
-Wire Wire Line
-	2700 3550 3300 3550
-Wire Wire Line
-	3300 3550 3300 3250
-Wire Wire Line
-	3300 3250 3800 3250
-Connection ~ 3300 3250
-Wire Wire Line
-	2700 4250 2700 4450
-Wire Wire Line
-	2700 4450 3300 4450
-Wire Wire Line
-	3300 4450 3300 4150
-Wire Wire Line
-	3300 4150 3900 4150
-Connection ~ 3300 4150
-Wire Wire Line
-	3300 2450 3250 2450
-$Comp
-L power:GND #PWR0149
-U 1 1 60C0B02D
-P 2600 2450
-F 0 "#PWR0149" H 2600 2200 50  0001 C CNN
-F 1 "GND" V 2605 2322 50  0000 R CNN
-F 2 "" H 2600 2450 50  0001 C CNN
-F 3 "" H 2600 2450 50  0001 C CNN
-	1    2600 2450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2600 2450 2650 2450
 $Comp
 L Device:R R27
 U 1 1 60C1BA62
-P 5950 2950
-F 0 "R27" H 6020 2996 50  0000 L CNN
-F 1 "R" H 6020 2905 50  0000 L CNN
-F 2 "" V 5880 2950 50  0001 C CNN
-F 3 "~" H 5950 2950 50  0001 C CNN
-	1    5950 2950
+P 4200 3300
+F 0 "R27" H 4270 3346 50  0000 L CNN
+F 1 "R" H 4270 3255 50  0000 L CNN
+F 2 "" V 4130 3300 50  0001 C CNN
+F 3 "~" H 4200 3300 50  0001 C CNN
+	1    4200 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 2800 5950 2750
+	4200 3150 4200 3100
 Wire Wire Line
-	5950 2750 6050 2750
+	4200 3100 4300 3100
 Wire Wire Line
-	5950 2750 5800 2750
-Connection ~ 5950 2750
+	4200 3100 4050 3100
+Connection ~ 4200 3100
 $Comp
 L power:GND #PWR0150
 U 1 1 60C1DC34
-P 5950 3150
-F 0 "#PWR0150" H 5950 2900 50  0001 C CNN
-F 1 "GND" H 5955 2977 50  0000 C CNN
-F 2 "" H 5950 3150 50  0001 C CNN
-F 3 "" H 5950 3150 50  0001 C CNN
-	1    5950 3150
+P 4200 3500
+F 0 "#PWR0150" H 4200 3250 50  0001 C CNN
+F 1 "GND" H 4205 3327 50  0000 C CNN
+F 2 "" H 4200 3500 50  0001 C CNN
+F 3 "" H 4200 3500 50  0001 C CNN
+	1    4200 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 3150 5950 3100
-$Comp
-L Device:R R28
-U 1 1 60C1F5B0
-P 8750 2950
-F 0 "R28" H 8820 2996 50  0000 L CNN
-F 1 "R" H 8820 2905 50  0000 L CNN
-F 2 "" V 8680 2950 50  0001 C CNN
-F 3 "~" H 8750 2950 50  0001 C CNN
-	1    8750 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0151
-U 1 1 60C1FA21
-P 8750 3150
-F 0 "#PWR0151" H 8750 2900 50  0001 C CNN
-F 1 "GND" H 8755 2977 50  0000 C CNN
-F 2 "" H 8750 3150 50  0001 C CNN
-F 3 "" H 8750 3150 50  0001 C CNN
-	1    8750 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 3150 8750 3100
-Wire Wire Line
-	8750 2800 8750 2750
-Wire Wire Line
-	8750 2750 8800 2750
-Wire Wire Line
-	8700 2750 8750 2750
-Connection ~ 8750 2750
-$Comp
-L Device:R R32
-U 1 1 60C22BDA
-P 8750 4450
-F 0 "R32" H 8820 4496 50  0000 L CNN
-F 1 "R" H 8820 4405 50  0000 L CNN
-F 2 "" V 8680 4450 50  0001 C CNN
-F 3 "~" H 8750 4450 50  0001 C CNN
-	1    8750 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 4300 8750 4250
-Wire Wire Line
-	8750 4250 8800 4250
-Wire Wire Line
-	8700 4250 8750 4250
-Connection ~ 8750 4250
+	4200 3500 4200 3450
 $Comp
 L Device:R R31
 U 1 1 60C25503
-P 6000 4450
-F 0 "R31" H 6070 4496 50  0000 L CNN
-F 1 "R" H 6070 4405 50  0000 L CNN
-F 2 "" V 5930 4450 50  0001 C CNN
-F 3 "~" H 6000 4450 50  0001 C CNN
-	1    6000 4450
+P 4200 5150
+F 0 "R31" H 4270 5196 50  0000 L CNN
+F 1 "R" H 4270 5105 50  0000 L CNN
+F 2 "" V 4130 5150 50  0001 C CNN
+F 3 "~" H 4200 5150 50  0001 C CNN
+	1    4200 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 4300 6000 4250
+	4200 5000 4200 4950
 Wire Wire Line
-	6000 4250 6050 4250
-Wire Wire Line
-	5950 4250 6000 4250
-Connection ~ 6000 4250
-$Comp
-L power:GND #PWR0152
-U 1 1 60C27A75
-P 8750 4650
-F 0 "#PWR0152" H 8750 4400 50  0001 C CNN
-F 1 "GND" H 8755 4477 50  0000 C CNN
-F 2 "" H 8750 4650 50  0001 C CNN
-F 3 "" H 8750 4650 50  0001 C CNN
-	1    8750 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 4650 8750 4600
+	4200 4950 4250 4950
+Connection ~ 4200 4950
 $Comp
 L power:GND #PWR0153
 U 1 1 60C29110
-P 6000 4650
-F 0 "#PWR0153" H 6000 4400 50  0001 C CNN
-F 1 "GND" H 6005 4477 50  0000 C CNN
-F 2 "" H 6000 4650 50  0001 C CNN
-F 3 "" H 6000 4650 50  0001 C CNN
-	1    6000 4650
+P 4200 5350
+F 0 "#PWR0153" H 4200 5100 50  0001 C CNN
+F 1 "GND" H 4205 5177 50  0000 C CNN
+F 2 "" H 4200 5350 50  0001 C CNN
+F 3 "" H 4200 5350 50  0001 C CNN
+	1    4200 5350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 4650 6000 4600
-Wire Wire Line
-	6350 4350 6350 4950
-Wire Wire Line
-	6350 4950 6750 4950
-Wire Wire Line
-	7100 4950 7100 5050
-Wire Wire Line
-	9100 4950 9100 4350
-Connection ~ 7100 4950
-Wire Wire Line
-	7100 2100 7100 2250
-Wire Wire Line
-	7100 2250 6750 2250
-Wire Wire Line
-	6350 2250 6350 2450
-Wire Wire Line
-	7100 2250 8050 2250
-Wire Wire Line
-	9100 2250 9100 2450
-Connection ~ 7100 2250
+	4200 5350 4200 5300
 $Comp
 L Diode:1N4007 D15
 U 1 1 60C3CA50
-P 6750 2850
-F 0 "D15" V 6704 2929 50  0000 L CNN
-F 1 "1N4007" V 6795 2929 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6750 2675 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6750 2850 50  0001 C CNN
-	1    6750 2850
+P 4300 2550
+F 0 "D15" V 4254 2629 50  0000 L CNN
+F 1 "1N4007" V 4345 2629 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4300 2375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4300 2550 50  0001 C CNN
+	1    4300 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L Diode:1N4007 D18
 U 1 1 60C41C7D
-P 6750 4300
-F 0 "D18" V 6704 4379 50  0000 L CNN
-F 1 "1N4007" V 6795 4379 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6750 4125 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6750 4300 50  0001 C CNN
-	1    6750 4300
+P 4250 4400
+F 0 "D18" V 4204 4479 50  0000 L CNN
+F 1 "1N4007" V 4295 4479 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4250 4225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4250 4400 50  0001 C CNN
+	1    4250 4400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6750 4450 6750 4950
-Connection ~ 6750 4950
-Wire Wire Line
-	6750 4950 7100 4950
-Wire Wire Line
-	6750 4150 6750 3550
-Connection ~ 6750 3550
-Wire Wire Line
-	6750 3550 7400 3550
-Wire Wire Line
-	6750 3000 6750 3550
-Wire Wire Line
-	6750 2700 6750 2250
-Connection ~ 6750 2250
-Wire Wire Line
-	6750 2250 6350 2250
-$Comp
-L Diode:1N4007 D16
-U 1 1 60C4F422
-P 8050 2850
-F 0 "D16" V 8004 2929 50  0000 L CNN
-F 1 "1N4007" V 8095 2929 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8050 2675 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8050 2850 50  0001 C CNN
-	1    8050 2850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8050 2700 8050 2250
-Connection ~ 8050 2250
-Wire Wire Line
-	8050 2250 9100 2250
-Wire Wire Line
-	8050 3000 8050 3550
-Connection ~ 8050 3550
-Wire Wire Line
-	8050 3550 9100 3550
-$Comp
-L Diode:1N4007 D17
-U 1 1 60C5859D
-P 8050 4250
-F 0 "D17" V 8004 4329 50  0000 L CNN
-F 1 "1N4007" V 8095 4329 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8050 4075 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8050 4250 50  0001 C CNN
-	1    8050 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8050 4100 8050 3550
-Wire Wire Line
-	7100 4950 8050 4950
-Wire Wire Line
-	8050 4400 8050 4950
-Connection ~ 8050 4950
-Wire Wire Line
-	8050 4950 9100 4950
-Text GLabel 2500 4050 0    50   Input ~ 0
-Motor_2
-Wire Wire Line
-	2500 4050 2700 4050
-Text GLabel 2500 3150 0    50   Input ~ 0
-Motor_1
-Wire Wire Line
-	2500 3150 2700 3150
 $Comp
 L power:+12V #PWR0167
 U 1 1 60B6C481
-P 7100 2100
-F 0 "#PWR0167" H 7100 1950 50  0001 C CNN
-F 1 "+12V" H 7115 2273 50  0000 C CNN
-F 2 "" H 7100 2100 50  0001 C CNN
-F 3 "" H 7100 2100 50  0001 C CNN
-	1    7100 2100
+P 4600 2200
+F 0 "#PWR0167" H 4600 2050 50  0001 C CNN
+F 1 "+12V" H 4615 2373 50  0000 C CNN
+F 2 "" H 4600 2200 50  0001 C CNN
+F 3 "" H 4600 2200 50  0001 C CNN
+	1    4600 2200
 	1    0    0    -1  
 $EndComp
+Text Label 4600 2350 0    50   ~ 0
+MOSFET1_SAL
+Text Label 4600 2700 0    50   ~ 0
+COM_MOSFET1
+Wire Wire Line
+	4600 2700 4600 2750
+Text Label 5400 2550 0    50   ~ 0
+MOSFET1_SAL
+Text Label 5400 2650 0    50   ~ 0
+COM_MOSFET1
+Wire Wire Line
+	5400 2550 5950 2550
+Wire Wire Line
+	5400 2650 5950 2650
+Wire Wire Line
+	4300 2700 4300 2750
+Wire Wire Line
+	4300 2750 4600 2750
+Connection ~ 4600 2750
+Wire Wire Line
+	4600 2750 4600 2800
 $Comp
-L power:+5V #PWR0168
-U 1 1 60B6D175
-P 3300 2450
-F 0 "#PWR0168" H 3300 2300 50  0001 C CNN
-F 1 "+5V" V 3315 2578 50  0000 L CNN
-F 2 "" H 3300 2450 50  0001 C CNN
-F 3 "" H 3300 2450 50  0001 C CNN
-	1    3300 2450
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0169
-U 1 1 60B6D43C
-P 4750 2300
-F 0 "#PWR0169" H 4750 2150 50  0001 C CNN
-F 1 "+5V" H 4765 2473 50  0000 C CNN
-F 2 "" H 4750 2300 50  0001 C CNN
-F 3 "" H 4750 2300 50  0001 C CNN
-	1    4750 2300
+L power:GND #PWR014
+U 1 1 615236D5
+P 4600 3500
+F 0 "#PWR014" H 4600 3250 50  0001 C CNN
+F 1 "GND" H 4605 3327 50  0000 C CNN
+F 2 "" H 4600 3500 50  0001 C CNN
+F 3 "" H 4600 3500 50  0001 C CNN
+	1    4600 3500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4550 5350 4550 5050
+Wire Wire Line
+	4550 4150 4550 4200
 $Comp
-L power:+5V #PWR0170
-U 1 1 60B6D898
-P 4750 3050
-F 0 "#PWR0170" H 4750 2900 50  0001 C CNN
-F 1 "+5V" H 4765 3223 50  0000 C CNN
-F 2 "" H 4750 3050 50  0001 C CNN
-F 3 "" H 4750 3050 50  0001 C CNN
-	1    4750 3050
+L power:+12V #PWR013
+U 1 1 615274C1
+P 4550 4150
+F 0 "#PWR013" H 4550 4000 50  0001 C CNN
+F 1 "+12V" H 4565 4323 50  0000 C CNN
+F 2 "" H 4550 4150 50  0001 C CNN
+F 3 "" H 4550 4150 50  0001 C CNN
+	1    4550 4150
 	1    0    0    -1  
 $EndComp
+Text Label 4550 4250 0    50   ~ 0
+MOSFET2_SAL
+Text Label 4550 4550 0    50   ~ 0
+COM_MOSFET2
+Wire Wire Line
+	4550 4550 4550 4600
+Wire Wire Line
+	4250 4200 4550 4200
+Connection ~ 4550 4200
+Wire Wire Line
+	4550 4200 4550 4250
+Wire Wire Line
+	4250 4200 4250 4250
+Wire Wire Line
+	4250 4550 4250 4600
+Wire Wire Line
+	4250 4600 4550 4600
+Connection ~ 4550 4600
+Wire Wire Line
+	4550 4600 4550 4650
 $Comp
-L power:+5V #PWR0171
-U 1 1 60B6DC1E
-P 4750 3800
-F 0 "#PWR0171" H 4750 3650 50  0001 C CNN
-F 1 "+5V" H 4765 3973 50  0000 C CNN
-F 2 "" H 4750 3800 50  0001 C CNN
-F 3 "" H 4750 3800 50  0001 C CNN
-	1    4750 3800
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 6152996A
+P 6150 3000
+F 0 "J5" H 6350 2950 50  0000 R CNN
+F 1 "Terminal M2" H 6400 2800 50  0000 R CNN
+F 2 "" H 6150 3000 50  0001 C CNN
+F 3 "~" H 6150 3000 50  0001 C CNN
+	1    6150 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0172
-U 1 1 60B6DFD2
-P 4750 4550
-F 0 "#PWR0172" H 4750 4400 50  0001 C CNN
-F 1 "+5V" H 4765 4723 50  0000 C CNN
-F 2 "" H 4750 4550 50  0001 C CNN
-F 3 "" H 4750 4550 50  0001 C CNN
-	1    4750 4550
-	1    0    0    -1  
-$EndComp
+Text Label 5400 3000 0    50   ~ 0
+MOSFET2_SAL
+Text Label 5400 3100 0    50   ~ 0
+COM_MOSFET2
+Wire Wire Line
+	5400 3000 5950 3000
+Wire Wire Line
+	5400 3100 5950 3100
+Text HLabel 4050 3100 0    50   Input ~ 0
+MOSFET1
+Text HLabel 4050 4950 0    50   Input ~ 0
+MOSFET2
+Wire Wire Line
+	4050 4950 4200 4950
+Wire Wire Line
+	4600 2200 4600 2250
+Wire Wire Line
+	4600 2250 4300 2250
+Wire Wire Line
+	4300 2250 4300 2400
+Connection ~ 4600 2250
+Wire Wire Line
+	4600 2250 4600 2350
+Wire Wire Line
+	4600 3200 4600 3500
 $EndSCHEMATC

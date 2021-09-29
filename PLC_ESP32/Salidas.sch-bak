@@ -1176,20 +1176,20 @@ F 3 "~" H 1350 6200 50  0001 C CNN
 $EndComp
 Text Label 700  5750 0    50   ~ 0
 COM_RELE2
-Text Label 700  6100 0    50   ~ 0
+Text Label 700  6300 0    50   ~ 0
 Q0.1_NA
 Wire Wire Line
 	700  5750 1150 5750
 Wire Wire Line
-	700  6100 1150 6100
-Text Label 700  6300 0    50   ~ 0
+	700  6300 1150 6300
+Text Label 700  6100 0    50   ~ 0
 Q0.2_NA
 Wire Wire Line
 	700  6200 1150 6200
 Text Label 700  6200 0    50   ~ 0
 COM_RELE3
 Wire Wire Line
-	700  6300 1150 6300
+	700  6100 1150 6100
 $Comp
 L Connector:Screw_Terminal_01x03 J4
 U 1 1 6159340C
@@ -1203,10 +1203,10 @@ F 3 "~" H 3450 5900 50  0001 C CNN
 	1    3450 5900
 	1    0    0    -1  
 $EndComp
-Text Label 2800 5800 0    50   ~ 0
+Text Label 2800 6000 0    50   ~ 0
 COM_TRIAC
 Wire Wire Line
-	2800 5800 3250 5800
+	2800 6000 3250 6000
 Text Label 2800 5900 0    50   ~ 0
 Q0.3_NA
 Wire Wire Line
@@ -1224,22 +1224,22 @@ F 3 "~" H 3450 6250 50  0001 C CNN
 	1    3450 6250
 	1    0    0    -1  
 $EndComp
-Text Label 2800 6000 0    50   ~ 0
+Text Label 2800 5800 0    50   ~ 0
 Q0.4_NA
 Wire Wire Line
-	2800 6000 3250 6000
-Text Label 2800 6150 0    50   ~ 0
+	2800 5800 3250 5800
+Text Label 2800 6350 0    50   ~ 0
 Q0.5_NA
 Wire Wire Line
-	2800 6150 3250 6150
+	2800 6350 3250 6350
 Text Label 2800 6250 0    50   ~ 0
 Q0.6_NA
 Wire Wire Line
 	2800 6250 3250 6250
-Text Label 2800 6350 0    50   ~ 0
+Text Label 2800 6150 0    50   ~ 0
 Q0.7_NA
 Wire Wire Line
-	2800 6350 3250 6350
+	2800 6150 3250 6150
 Wire Notes Line
 	500  5450 4500 5450
 Wire Notes Line
@@ -1272,4 +1272,19 @@ Text Notes 1850 2550 0    50   ~ 0
 hfe=35 (min)\nIc (max) = 0.8A
 Text Notes 1400 850  0    50   ~ 0
 Rrele= 70 ohm
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 62398517
+P 2400 800
+F 0 "#FLG0104" H 2400 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 973 50  0000 C CNN
+F 2 "" H 2400 800 50  0001 C CNN
+F 3 "~" H 2400 800 50  0001 C CNN
+	1    2400 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 800  2400 900 
+Wire Wire Line
+	2400 900  2100 900 
 $EndSCHEMATC

@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1543)
+    (start_pass_no 2435)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -41,6 +41,9 @@
     (attach off)
   )
   (via 
+    "Via[0-1]_800:400_um-Alimentacion" "Via[0-1]_800:400_um" Alimentacion
+  )
+  (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
@@ -48,6 +51,9 @@
   )
   (via 
     "Via[0-1]_800:400_um-SALIDAS AC" "Via[0-1]_800:400_um" "SALIDAS AC"
+  )
+  (via_rule
+    Alimentacion "Via[0-1]_800:400_um-Alimentacion"
   )
   (via_rule
     default "Via[0-1]_800:400_um"
@@ -86,11 +92,22 @@
     "Net-(U2-Pad12)" "Net-(U2-Pad10)" /Control/RI /Control/DCD /Control/Q0.2 "Net-(U3-Pad32)" /Control/Q0.1 /Control/Q0.0
     /Control/SD1 /Control/SD0 /Control/CLK /Control/CMD /Control/SD3 /Control/SD2 /Control/Q0.3 /Control/Q0.5
     /Control/Q0.4 /Control/Q0.7 /Control/Q0.6 "/Control/SENSOR_VN" "/Control/SENSOR_VP" "Net-(U7-Pad3)" "Net-(U7-Pad5)" "Net-(U8-Pad3)"
-    "Net-(U8-Pad5)" "Net-(U9-Pad3)" "Net-(U9-Pad5)" "Net-(U10-Pad3)" "Net-(U10-Pad5)" "Net-(U11-Pad3)" "Net-(U11-Pad5)"
+    "Net-(U8-Pad5)" "Net-(U9-Pad3)" "Net-(U9-Pad5)" "Net-(U10-Pad3)" "Net-(U10-Pad5)" "Net-(U11-Pad3)" "Net-(U11-Pad5)" "Net-(BZ1-Pad1)"
+    "Net-(C11-Pad1)" "/Control/IO5_PWM" "/Control/IO13_PWM" "/Control/A_ENCODER" "/Control/B_ENCODER" /Control/IO34 "Net-(JP7-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Alimentacion
+    (clearance_class Alimentacion)
+    (via_rule Alimentacion)
+    (rule
+      (width 500.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)

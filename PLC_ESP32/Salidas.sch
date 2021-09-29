@@ -1272,4 +1272,19 @@ Text Notes 1850 2550 0    50   ~ 0
 hfe=35 (min)\nIc (max) = 0.8A
 Text Notes 1400 850  0    50   ~ 0
 Rrele= 70 ohm
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 62398517
+P 2400 800
+F 0 "#FLG0104" H 2400 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 973 50  0000 C CNN
+F 2 "" H 2400 800 50  0001 C CNN
+F 3 "~" H 2400 800 50  0001 C CNN
+	1    2400 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 800  2400 900 
+Wire Wire Line
+	2400 900  2100 900 
 $EndSCHEMATC

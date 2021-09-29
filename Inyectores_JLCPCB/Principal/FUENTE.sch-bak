@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:INYECTORES-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -184,12 +185,12 @@ $Comp
 L Connector:Screw_Terminal_01x03 J4
 U 1 1 5F38743A
 P 4500 3500
-F 0 "J4" H 4418 3817 50  0000 C CNN
-F 1 "ENTRADA_CIRCUITO" H 4418 3726 50  0000 C CNN
-F 2 "BorneraTornillos:bornera_tornillos_1x03" H 4500 3500 50  0001 C CNN
+F 0 "J4" H 4450 3900 50  0000 C CNN
+F 1 "ENTRADA_CIRCUITO" H 4450 3800 50  0000 C CNN
+F 2 "BorneraTornillos:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 4500 3500 50  0001 C CNN
 F 3 "~" H 4500 3500 50  0001 C CNN
 	1    4500 3500
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4700 3600 4700 3700
