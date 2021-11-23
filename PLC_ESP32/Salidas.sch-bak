@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PLC_ESP32-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -40,19 +41,6 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 1100 1800 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC548 Q3
-U 1 1 6145D2A0
-P 2000 1900
-AR Path="/61294493/6145D2A0" Ref="Q3"  Part="1" 
-AR Path="/615E1DF0/6145D2A0" Ref="Q?"  Part="1" 
-F 0 "Q3" H 2191 1946 50  0000 L CNN
-F 1 "2N2222A" H 2191 1855 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2200 1825 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 2000 1900 50  0001 L CNN
-	1    2000 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R13
 U 1 1 6145E3DC
 P 1600 1900
@@ -77,7 +65,7 @@ AR Path="/61294493/61460A99" Ref="D8"  Part="1"
 AR Path="/615E1DF0/61460A99" Ref="D?"  Part="1" 
 F 0 "D8" V 1650 1300 50  0000 L CNN
 F 1 "1N4007" H 1600 1100 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1750 1075 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 1750 1075 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1750 1250 50  0001 C CNN
 	1    1750 1250
 	0    1    1    0   
@@ -230,19 +218,6 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 1200 4100 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC548 Q4
-U 1 1 6147F0A4
-P 2100 4200
-AR Path="/61294493/6147F0A4" Ref="Q4"  Part="1" 
-AR Path="/615E1DF0/6147F0A4" Ref="Q?"  Part="1" 
-F 0 "Q4" H 2291 4246 50  0000 L CNN
-F 1 "2N2222A" H 2291 4155 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2300 4125 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 2100 4200 50  0001 L CNN
-	1    2100 4200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R14
 U 1 1 6147F0AE
 P 1700 4200
@@ -267,7 +242,7 @@ AR Path="/61294493/6147F0BA" Ref="D9"  Part="1"
 AR Path="/615E1DF0/6147F0BA" Ref="D?"  Part="1" 
 F 0 "D9" V 1750 3600 50  0000 L CNN
 F 1 "1N4007" H 1700 3400 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 1850 3375 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 1850 3375 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 1850 3550 50  0001 C CNN
 	1    1850 3550
 	0    1    1    0   
@@ -422,19 +397,6 @@ F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 3550 1800 50  00
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:BC548 Q5
-U 1 1 6148BC50
-P 4450 1900
-AR Path="/61294493/6148BC50" Ref="Q5"  Part="1" 
-AR Path="/615E1DF0/6148BC50" Ref="Q?"  Part="1" 
-F 0 "Q5" H 4641 1946 50  0000 L CNN
-F 1 "2N2222A" H 4641 1855 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 1825 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4450 1900 50  0001 L CNN
-	1    4450 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R16
 U 1 1 6148BC5A
 P 4050 1900
@@ -459,7 +421,7 @@ AR Path="/61294493/6148BC66" Ref="D11"  Part="1"
 AR Path="/615E1DF0/6148BC66" Ref="D?"  Part="1" 
 F 0 "D11" V 4100 1300 50  0000 L CNN
 F 1 "1N4007" H 4050 1100 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4200 1075 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 4200 1075 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4200 1250 50  0001 C CNN
 	1    4200 1250
 	0    1    1    0   
@@ -1287,4 +1249,37 @@ Wire Wire Line
 	2400 800  2400 900 
 Wire Wire Line
 	2400 900  2100 900 
+$Comp
+L Transistor_BJT:2N2219 Q3
+U 1 1 6154F61B
+P 2000 1900
+F 0 "Q3" H 2190 1946 50  0000 L CNN
+F 1 "2N2219" H 2190 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2200 1825 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 2000 1900 50  0001 L CNN
+	1    2000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q5
+U 1 1 61550A00
+P 4450 1900
+F 0 "Q5" H 4640 1946 50  0000 L CNN
+F 1 "2N2219" H 4640 1855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 1825 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 4450 1900 50  0001 L CNN
+	1    4450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N2219 Q4
+U 1 1 6155197A
+P 2100 4200
+F 0 "Q4" H 2290 4246 50  0000 L CNN
+F 1 "2N2219" H 2290 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2300 4125 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 2100 4200 50  0001 L CNN
+	1    2100 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

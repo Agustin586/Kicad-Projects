@@ -1,4 +1,4 @@
-update=26/8/2021 22:52:07
+update=15/11/2021 10:31:29
 version=1
 last_client=kicad
 [general]
@@ -249,6 +249,17 @@ dPairWidth=0.25
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=3.3V
+Clearance=0.2
+TrackWidth=0.3
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.25
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=Alimentacion
 Clearance=0.2
 TrackWidth=0.5
@@ -259,7 +270,7 @@ uViaDrill=0.1
 dPairWidth=0.25
 dPairGap=0.25
 dPairViaGap=0.25
-[pcbnew/Netclasses/2]
+[pcbnew/Netclasses/3]
 Name=SALIDAS AC
 Clearance=0.2
 TrackWidth=2.5
