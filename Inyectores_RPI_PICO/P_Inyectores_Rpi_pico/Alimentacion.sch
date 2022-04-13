@@ -125,7 +125,7 @@ U 1 1 61D91AAC
 P 3700 1700
 F 0 "U5" H 3700 1942 50  0000 C CNN
 F 1 "L7805" H 3700 1851 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 3725 1550 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3725 1550 50  0001 L CIN
 F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3700 1650 50  0001 C CNN
 	1    3700 1700
 	1    0    0    -1  
