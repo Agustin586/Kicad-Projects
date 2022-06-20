@@ -1,4 +1,4 @@
-update=13/4/2022 06:20:44
+update=17/4/2022 12:00:25
 version=1
 last_client=kicad
 [general]
@@ -238,7 +238,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=1A
-Clearance=0.2
+Clearance=0.4
 TrackWidth=1
 ViaDiameter=1.5
 ViaDrill=0.4
@@ -249,7 +249,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=CNC
-Clearance=0.2
+Clearance=0.32
 TrackWidth=1
 ViaDiameter=1.5
 ViaDrill=0.4
@@ -260,8 +260,8 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=Control
-Clearance=0.15
-TrackWidth=0.3
+Clearance=0.32
+TrackWidth=0.5
 ViaDiameter=1.5
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -271,7 +271,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=Rele
-Clearance=0.2
+Clearance=0.4
 TrackWidth=3
 ViaDiameter=1.5
 ViaDrill=0.4
