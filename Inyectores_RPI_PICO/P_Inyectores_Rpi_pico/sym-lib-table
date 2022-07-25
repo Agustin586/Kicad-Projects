@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "P_Inyectores_Rpi_pico-rescue")(type "Legacy")(uri "${KIPRJMOD}/P_Inyectores_Rpi_pico-rescue.lib")(options "")(descr ""))
+)

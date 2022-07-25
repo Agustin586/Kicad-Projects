@@ -1,0 +1,294 @@
+EESchema Schematic File Version 5
+EELAYER 36 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
+$EndDescr
+Connection ~ 2550 1700
+Connection ~ 3250 1700
+Connection ~ 3250 2200
+Connection ~ 3350 1700
+Connection ~ 3700 2200
+Connection ~ 4100 1700
+Connection ~ 4450 1700
+Wire Wire Line
+	1700 1700 2050 1700
+Wire Wire Line
+	1800 1800 1700 1800
+Wire Wire Line
+	1800 1850 1800 1800
+Wire Wire Line
+	2350 1700 2550 1700
+Wire Wire Line
+	2550 1600 2550 1700
+Wire Wire Line
+	2550 1700 2850 1700
+Wire Wire Line
+	2550 1800 2550 1700
+Wire Wire Line
+	2550 2100 2550 2150
+Wire Wire Line
+	2550 2500 2550 2450
+Wire Wire Line
+	3150 1700 3250 1700
+Wire Wire Line
+	3250 1350 3250 1700
+Wire Wire Line
+	3250 1700 3350 1700
+Wire Wire Line
+	3250 1850 3250 1700
+Wire Wire Line
+	3250 2200 3250 2150
+Wire Wire Line
+	3250 2350 3250 2200
+Wire Wire Line
+	3350 1600 3350 1700
+Wire Wire Line
+	3350 1700 3400 1700
+Wire Wire Line
+	3550 1350 3250 1350
+Wire Wire Line
+	3700 2000 3700 2200
+Wire Wire Line
+	3700 2200 3250 2200
+Wire Wire Line
+	3850 1350 4100 1350
+Wire Wire Line
+	4100 1350 4100 1700
+Wire Wire Line
+	4100 1700 4000 1700
+Wire Wire Line
+	4100 1850 4100 1700
+Wire Wire Line
+	4100 2150 4100 2200
+Wire Wire Line
+	4100 2200 3700 2200
+Wire Wire Line
+	4450 1600 4450 1700
+Wire Wire Line
+	4450 1700 4100 1700
+Wire Wire Line
+	4750 1700 4450 1700
+Wire Wire Line
+	5050 2150 5050 2000
+Wire Wire Line
+	5600 1650 5600 1700
+Wire Wire Line
+	5600 1700 5350 1700
+$Comp
+L power:+12V #PWR0101
+U 1 1 61D7399F
+P 2550 1600
+F 0 "#PWR0101" H 2550 1450 50  0001 C CNN
+F 1 "+12V" H 2565 1773 50  0000 C CNN
+F 2 "" H 2550 1600 50  0001 C CNN
+F 3 "" H 2550 1600 50  0001 C CNN
+	1    2550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 61D9221D
+P 4450 1600
+F 0 "#PWR0104" H 4450 1450 50  0001 C CNN
+F 1 "+5V" H 4465 1773 50  0000 C CNN
+F 2 "" H 4450 1600 50  0001 C CNN
+F 3 "" H 4450 1600 50  0001 C CNN
+	1    4450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L P_Inyectores_Rpi_pico-rescue:+3.3V-power #PWR0107
+U 1 1 61D9A87C
+P 5600 1650
+F 0 "#PWR0107" H 5600 1500 50  0001 C CNN
+F 1 "+3.3V" H 5615 1823 50  0000 C CNN
+F 2 "" H 5600 1650 50  0001 C CNN
+F 3 "" H 5600 1650 50  0001 C CNN
+	1    5600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61ED01D7
+P 3350 1600
+F 0 "#FLG0101" H 3350 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 1773 50  0000 C CNN
+F 2 "" H 3350 1600 50  0001 C CNN
+F 3 "~" H 3350 1600 50  0001 C CNN
+	1    3350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61D7998F
+P 1800 1850
+F 0 "#PWR0102" H 1800 1600 50  0001 C CNN
+F 1 "GND" H 1805 1677 50  0000 C CNN
+F 2 "" H 1800 1850 50  0001 C CNN
+F 3 "" H 1800 1850 50  0001 C CNN
+	1    1800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61D80355
+P 2550 2500
+F 0 "#PWR0103" H 2550 2250 50  0001 C CNN
+F 1 "GND" H 2555 2327 50  0000 C CNN
+F 2 "" H 2550 2500 50  0001 C CNN
+F 3 "" H 2550 2500 50  0001 C CNN
+	1    2550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 61D7AF67
+P 3250 2350
+F 0 "#PWR0105" H 3250 2100 50  0001 C CNN
+F 1 "GND" H 3255 2177 50  0000 C CNN
+F 2 "" H 3250 2350 50  0001 C CNN
+F 3 "" H 3250 2350 50  0001 C CNN
+	1    3250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 61D99E83
+P 5050 2150
+F 0 "#PWR0106" H 5050 1900 50  0001 C CNN
+F 1 "GND" H 5055 1977 50  0000 C CNN
+F 2 "" H 5050 2150 50  0001 C CNN
+F 3 "" H 5050 2150 50  0001 C CNN
+	1    5050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 61D77501
+P 2200 1700
+F 0 "F1" V 2003 1700 50  0000 C CNN
+F 1 "12V/4A" V 2094 1700 50  0000 C CNN
+F 2 "Bornera_Tornillos:Fuse_20x5mm" V 2130 1700 50  0001 C CNN
+F 3 "~" H 2200 1700 50  0001 C CNN
+	1    2200 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61D7ECA9
+P 2550 1950
+F 0 "R1" H 2620 1996 50  0000 L CNN
+F 1 "330" H 2620 1905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2480 1950 50  0001 C CNN
+F 3 "~" H 2550 1950 50  0001 C CNN
+	1    2550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D6
+U 1 1 61D76A66
+P 3000 1700
+F 0 "D6" H 3000 1484 50  0000 C CNN
+F 1 "1N4007" H 3000 1575 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3000 1525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3000 1700 50  0001 C CNN
+	1    3000 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4007 D5
+U 1 1 61D7CABC
+P 3700 1350
+F 0 "D5" H 3700 1566 50  0000 C CNN
+F 1 "1N4007" H 3700 1475 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3700 1175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3700 1350 50  0001 C CNN
+	1    3700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 61D7E195
+P 2550 2300
+F 0 "D7" V 2589 2183 50  0000 R CNN
+F 1 "LED" V 2498 2183 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 2550 2300 50  0001 C CNN
+F 3 "~" H 2550 2300 50  0001 C CNN
+	1    2550 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61D78AB1
+P 1500 1700
+F 0 "J1" H 1418 1917 50  0000 C CNN
+F 1 "Entrada_12V/4A" H 1418 1826 50  0000 C CNN
+F 2 "Bornera_Tornillos:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 1500 1700 50  0001 C CNN
+F 3 "~" H 1500 1700 50  0001 C CNN
+	1    1500 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L P_Inyectores_Rpi_pico-rescue:CP-Device C1
+U 1 1 61D7A960
+P 3250 2000
+AR Path="/61D7A960" Ref="C1"  Part="1" 
+AR Path="/61D736E1/61D7A960" Ref="C1"  Part="1" 
+F 0 "C1" H 3368 2046 50  0000 L CNN
+F 1 "CP" H 3368 1955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3288 1850 50  0001 C CNN
+F 3 "~" H 3250 2000 50  0001 C CNN
+	1    3250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L P_Inyectores_Rpi_pico-rescue:CP-Device C2
+U 1 1 61D7B49A
+P 4100 2000
+AR Path="/61D7B49A" Ref="C2"  Part="1" 
+AR Path="/61D736E1/61D7B49A" Ref="C2"  Part="1" 
+F 0 "C2" H 4218 2046 50  0000 L CNN
+F 1 "CP" H 4218 1955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4138 1850 50  0001 C CNN
+F 3 "~" H 4100 2000 50  0001 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U5
+U 1 1 61D91AAC
+P 3700 1700
+F 0 "U5" H 3700 1942 50  0000 C CNN
+F 1 "L7805" H 3700 1851 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3725 1550 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 3700 1650 50  0001 C CNN
+	1    3700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-3.3 U6
+U 1 1 61D986C8
+P 5050 1700
+F 0 "U6" H 5050 1942 50  0000 C CNN
+F 1 "AMS1117-3.3" H 5050 1851 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5050 1900 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 5150 1450 50  0001 C CNN
+	1    5050 1700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

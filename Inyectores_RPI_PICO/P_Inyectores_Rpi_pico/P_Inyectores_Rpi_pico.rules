@@ -11,14 +11,14 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 14)
-    (layer_rule F.Cu
+    (start_pass_no 24)
+    (layer_rule "F.Cu"
       (active off)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
       (against_preferred_direction_trace_costs 2.1)
     )
-    (layer_rule B.Cu
+    (layer_rule "B.Cu"
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
@@ -29,61 +29,86 @@
     (width 250.0)
     (clear 200.2)
     (clear 125.0 (type smd_to_turn_gap))
-    (clear 400.2 (type default_1A))
-    (clear 320.2 (type default_CNC))
-    (clear 320.2 (type default_Control))
-    (clear 400.2 (type default_Rele))
-    (clear 400.2 (type default_"Salida_Iny"))
-    (clear 50.0 (type smd_smd))
-    (clear 400.2 (type smd_1A))
-    (clear 320.2 (type smd_CNC))
-    (clear 320.2 (type smd_Control))
-    (clear 400.2 (type smd_Rele))
-    (clear 400.2 (type smd_"Salida_Iny"))
-    (clear 400.2 (type "kicad_default"_1A))
-    (clear 320.2 (type "kicad_default"_CNC))
-    (clear 320.2 (type "kicad_default"_Control))
-    (clear 400.2 (type "kicad_default"_Rele))
-    (clear 400.2 (type "kicad_default"_"Salida_Iny"))
-    (clear 400.2 (type 1A_1A))
-    (clear 400.2 (type 1A_CNC))
-    (clear 400.2 (type 1A_Control))
-    (clear 400.2 (type 1A_Rele))
-    (clear 400.2 (type 1A_"Salida_Iny"))
-    (clear 320.2 (type CNC_CNC))
-    (clear 320.2 (type CNC_Control))
-    (clear 400.2 (type CNC_Rele))
-    (clear 400.2 (type CNC_"Salida_Iny"))
-    (clear 320.2 (type Control_Control))
-    (clear 400.2 (type Control_Rele))
-    (clear 400.2 (type Control_"Salida_Iny"))
-    (clear 400.2 (type Rele_Rele))
-    (clear 400.2 (type Rele_"Salida_Iny"))
-    (clear 400.2 (type "Salida_Iny"_"Salida_Iny"))
+    (clear 320.2 (type "default"-"Control"))
+    (clear 400.2 (type "default"-"Rele"))
+    (clear 400.2 (type "default"-"Salida_Iny"))
+    (clear 400.2 (type "default"-"1A"))
+    (clear 320.2 (type "default"-"CNC"))
+    (clear 400.2 (type "default"-"kicad"))
+    (clear 50.0 (type "smd"-"smd"))
+    (clear 320.2 (type "smd"-"Control"))
+    (clear 400.2 (type "smd"-"Rele"))
+    (clear 400.2 (type "smd"-"Salida_Iny"))
+    (clear 400.2 (type "smd"-"1A"))
+    (clear 320.2 (type "smd"-"CNC"))
+    (clear 320.2 (type "Control"-"Control"))
+    (clear 400.2 (type "Control"-"Rele"))
+    (clear 400.2 (type "Control"-"Salida_Iny"))
+    (clear 400.2 (type "Control"-"1A"))
+    (clear 320.2 (type "Control"-"CNC"))
+    (clear 320.2 (type "Control"-"kicad"))
+    (clear 320.2 (type "Control"-""))
+    (clear 320.2 (type "Control"-"Salida"))
+    (clear 320.2 (type "Control"-"Iny"))
+    (clear 400.2 (type "Rele"-"Rele"))
+    (clear 400.2 (type "Rele"-"Salida_Iny"))
+    (clear 400.2 (type "Rele"-"1A"))
+    (clear 400.2 (type "Rele"-"CNC"))
+    (clear 400.2 (type "Rele"-"kicad"))
+    (clear 400.2 (type "Rele"-""))
+    (clear 400.2 (type "Rele"-"Salida"))
+    (clear 400.2 (type "Rele"-"Iny"))
+    (clear 400.2 (type "Salida_Iny"-"1A"))
+    (clear 400.2 (type "Salida_Iny"-"CNC"))
+    (clear 400.2 (type "Salida_Iny"-"kicad"))
+    (clear 400.2 (type "Salida_Iny"-""))
+    (clear 400.2 (type "Salida_Iny"-"Salida"))
+    (clear 400.2 (type "Salida_Iny"-"Iny"))
+    (clear 400.2 (type "1A"-"1A"))
+    (clear 400.2 (type "1A"-"CNC"))
+    (clear 400.2 (type "1A"-"kicad"))
+    (clear 400.2 (type "1A"-""))
+    (clear 400.2 (type "1A"-"Salida"))
+    (clear 400.2 (type "1A"-"Iny"))
+    (clear 320.2 (type "CNC"-"CNC"))
+    (clear 320.2 (type "CNC"-"kicad"))
+    (clear 320.2 (type "CNC"-""))
+    (clear 320.2 (type "CNC"-"Salida"))
+    (clear 320.2 (type "CNC"-"Iny"))
+    (clear 400.2 (type "kicad"-""))
+    (clear 400.2 (type "kicad"-"Salida"))
+    (clear 400.2 (type "kicad"-"Iny"))
+    (clear 400.2 (type "Salida"-"Iny"))
   )
   (padstack "Via[0-1]_1500:400_um"
     (shape
-      (circle F.Cu 1500.0 0.0 0.0)
+      (circle "F.Cu" 1500.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 1500.0 0.0 0.0)
+      (circle "B.Cu" 1500.0 0.0 0.0)
     )
     (attach off)
   )
   (padstack "Via[0-1]_1700:700_um"
     (shape
-      (circle F.Cu 1700.0 0.0 0.0)
+      (circle "F.Cu" 1700.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 1700.0 0.0 0.0)
+      (circle "B.Cu" 1700.0 0.0 0.0)
     )
     (attach off)
   )
   (via 
-    "Via[0-1]_1500:400_um" "Via[0-1]_1500:400_um" default
+    "Via[0-1]_1500:400_um-1mm" "Via[0-1]_1500:400_um" "1mm"
   )
   (via 
-    "Via[0-1]_1700:700_um" "Via[0-1]_1700:700_um" default
+    "Via[0-1]_1700:700_um-1mm" "Via[0-1]_1700:700_um" "1mm"
+  )
+  (via 
+    "Via[0-1]_1500:400_um" "Via[0-1]_1500:400_um" "default"
+  )
+  (via 
+    "Via[0-1]_1700:700_um" "Via[0-1]_1700:700_um" "default"
   )
   (via 
     "Via[0-1]_1500:400_um-kicad_default" "Via[0-1]_1500:400_um" "kicad_default"
@@ -92,28 +117,28 @@
     "Via[0-1]_1700:700_um-kicad_default" "Via[0-1]_1700:700_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_1500:400_um-1A" "Via[0-1]_1500:400_um" 1A
+    "Via[0-1]_1500:400_um-1A" "Via[0-1]_1500:400_um" "1A"
   )
   (via 
-    "Via[0-1]_1700:700_um-1A" "Via[0-1]_1700:700_um" 1A
+    "Via[0-1]_1700:700_um-1A" "Via[0-1]_1700:700_um" "1A"
   )
   (via 
-    "Via[0-1]_1500:400_um-CNC" "Via[0-1]_1500:400_um" CNC
+    "Via[0-1]_1500:400_um-CNC" "Via[0-1]_1500:400_um" "CNC"
   )
   (via 
-    "Via[0-1]_1700:700_um-CNC" "Via[0-1]_1700:700_um" CNC
+    "Via[0-1]_1700:700_um-CNC" "Via[0-1]_1700:700_um" "CNC"
   )
   (via 
-    "Via[0-1]_1500:400_um-Control" "Via[0-1]_1500:400_um" Control
+    "Via[0-1]_1500:400_um-Control" "Via[0-1]_1500:400_um" "Control"
   )
   (via 
-    "Via[0-1]_1700:700_um-Control" "Via[0-1]_1700:700_um" Control
+    "Via[0-1]_1700:700_um-Control" "Via[0-1]_1700:700_um" "Control"
   )
   (via 
-    "Via[0-1]_1500:400_um-Rele" "Via[0-1]_1500:400_um" Rele
+    "Via[0-1]_1500:400_um-Rele" "Via[0-1]_1500:400_um" "Rele"
   )
   (via 
-    "Via[0-1]_1700:700_um-Rele" "Via[0-1]_1700:700_um" Rele
+    "Via[0-1]_1700:700_um-Rele" "Via[0-1]_1700:700_um" "Rele"
   )
   (via 
     "Via[0-1]_1500:400_um-Salida_Iny" "Via[0-1]_1500:400_um" "Salida_Iny"
@@ -122,29 +147,33 @@
     "Via[0-1]_1700:700_um-Salida_Iny" "Via[0-1]_1700:700_um" "Salida_Iny"
   )
   (via_rule
-    default "Via[0-1]_1500:400_um"
+    "1mm" "Via[0-1]_1500:400_um-1mm"
+  )
+  (via_rule
+    "default" "Via[0-1]_1500:400_um"
   )
   (via_rule
     "kicad_default" "Via[0-1]_1500:400_um-kicad_default"
   )
   (via_rule
-    1A "Via[0-1]_1500:400_um-1A"
+    "1A" "Via[0-1]_1500:400_um-1A"
   )
   (via_rule
-    CNC "Via[0-1]_1500:400_um-CNC"
+    "CNC" "Via[0-1]_1500:400_um-CNC"
   )
   (via_rule
-    Control "Via[0-1]_1500:400_um-Control"
+    "Control" "Via[0-1]_1500:400_um-Control"
   )
   (via_rule
-    Rele "Via[0-1]_1500:400_um-Rele"
+    "Rele" "Via[0-1]_1500:400_um-Rele"
   )
   (via_rule
     "Salida_Iny" "Via[0-1]_1700:700_um-Salida_Iny"
   )
-  (class default
-    (clearance_class default)
-    (via_rule default)
+  (class "default"
+    "unconnected-(J1-Pad2)"
+    (clearance_class "default")
+    (via_rule "default")
     (rule
       (width 250.0)
     )
@@ -154,7 +183,7 @@
   )
   (class "kicad_default"
     (clearance_class "kicad_default")
-    (via_rule kicad_default)
+    (via_rule "kicad_default")
     (rule
       (width 250.0)
     )
@@ -162,10 +191,12 @@
       (use_layer F.Cu B.Cu)
     )
   )
-  (class 1A
-    +5V "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" /Control/A
-    (clearance_class 1A)
-    (via_rule 1A)
+  (class "1mm"
+    "unconnected-(U10-Pad4)" "unconnected-(U7-Pad3)" "unconnected-(U7-Pad8)" "unconnected-(U7-Pad13)" "unconnected-(U7-Pad18)" "unconnected-(U7-Pad23)" "unconnected-(U7-Pad28)" "unconnected-(U7-Pad31)"
+    "unconnected-(U7-Pad32)" "unconnected-(U7-Pad34)" "unconnected-(U7-Pad35)" "unconnected-(U7-Pad36)" "unconnected-(U7-Pad37)" "unconnected-(U7-Pad40)" "unconnected-(U7-Pad41)" "unconnected-(U7-Pad42)"
+    "unconnected-(U7-Pad43)" "/Control/INY1_OUT" "/Control/INY2_OUT" "/Control/INY3_OUT"
+    (clearance_class "1mm")
+    (via_rule "1mm")
     (rule
       (width 1000.0)
     )
@@ -173,29 +204,11 @@
       (use_layer F.Cu B.Cu)
     )
   )
-  (class CNC
-    "Net-(BZ1-Pad1)" "Net-(C1-Pad1)" "Net-(D7-Pad2)" "Net-(D8-Pad1)" "Net-(D9-Pad3)" "Net-(D9-Pad2)" "Net-(D9-Pad1)" "Net-(D10-Pad2)"
-    "Net-(D11-Pad2)" "Net-(D12-Pad2)" "Net-(D13-Pad2)" "Net-(K1-Pad4)" "Net-(K2-Pad4)" "Net-(Q5-Pad2)" "Net-(Q6-Pad2)" "Net-(Q7-Pad2)"
-    /Control/Buzzer /Control/B /Control/Rgb1 "/Control/Encoder_Push" /Control/Rgb2 /Control/Rgb3 /Control/INYECTORES "Net-(R9-Pad1)"
-    "Net-(R10-Pad1)" "/Control/R1_OUT" "Net-(R14-Pad1)" "Net-(R15-Pad1)" "/Control/R2_OUT" /Control/RESET "Net-(U7-Pad43)" "Net-(U7-Pad42)"
-    "Net-(U7-Pad41)" "Net-(U7-Pad23)" "Net-(U7-Pad28)" "Net-(U7-Pad31)" "Net-(U7-Pad32)" "Net-(U7-Pad34)" "Net-(U7-Pad35)" "Net-(U7-Pad36)"
-    "Net-(U7-Pad37)" "Net-(U7-Pad40)" "Net-(U7-Pad18)" "Net-(U7-Pad13)" /Control/Bomba2 "Net-(U7-Pad8)" /Control/Bomba1 "Net-(U7-Pad3)"
-    "/Control/UART0_RX" "/Control/UART0_TX" "Net-(BT1-Pad1)" "Net-(D14-Pad2)" "Net-(R20-Pad2)" "Net-(R21-Pad2)" "Net-(U10-Pad4)" /Control/GPIO22
-    /Control/GPIO21 /Control/GPIO20 /Control/GPIO17 /Control/GPIO16 /Control/GPIO15 /Control/GPIO14 "/Control/PULSADOR_2" "/Control/PULSADOR_1"
-    "Net-(C11-Pad2)" "Net-(C12-Pad2)" "Net-(C13-Pad2)" "Net-(C14-Pad2)"
-    (clearance_class CNC)
-    (via_rule CNC)
-    (rule
-      (width 1000.0)
-    )
-    (circuit 
-      (use_layer F.Cu B.Cu)
-    )
-  )
-  (class Control
-    "/Control/I2C0_SCL" "/Control/I2C0_SDA" "Net-(JP1-Pad2)" "Net-(JP2-Pad2)" "Net-(JP3-Pad2)"
-    (clearance_class Control)
-    (via_rule Control)
+  (class "Control"
+    "/Control/RTC_14" "+3V3" "/Control/RTC_1" "/Control/RTC_3" "/Control/I2C0_SCL" "/Control/I2C0_SDA" "Net-(JP1-Pad2)" "Net-(JP2-Pad2)"
+    "Net-(JP3-Pad2)"
+    (clearance_class "Control")
+    (via_rule "Control")
     (rule
       (width 500.0)
     )
@@ -203,10 +216,10 @@
       (use_layer F.Cu B.Cu)
     )
   )
-  (class Rele
-    "/Control/Sal_Rele1" "/Control/Com_Rele1" "/Control/Sal_Rele2" "/Control/Com_Rele2"
-    (clearance_class Rele)
-    (via_rule Rele)
+  (class "Rele"
+    "/Control/Com_Rele1" "/Control/Com_Rele2" "/Control/Sal1_Rele1" "/Control/Sal2_Rele1" "/Control/Sal1_Rele2" "/Control/Sal2_Rele2"
+    (clearance_class "Rele")
+    (via_rule "Rele")
     (rule
       (width 3000.0)
     )
@@ -215,11 +228,38 @@
     )
   )
   (class "Salida_Iny"
-    +12V "Net-(F1-Pad2)"
+    "+12V" "Net-(F1-Pad2)"
     (clearance_class "Salida_Iny")
-    (via_rule Salida_Iny)
+    (via_rule "Salida_Iny")
     (rule
       (width 2100.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "1A"
+    "+5V" "Net-(D4-Pad2)" "/Control/A"
+    (clearance_class "1A")
+    (via_rule "1A")
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "CNC"
+    "Net-(BZ1-Pad1)" "Net-(C1-Pad1)" "Net-(D7-Pad2)" "Net-(D8-Pad1)" "Net-(D9-Pad3)" "Net-(D9-Pad2)" "Net-(D9-Pad1)" "Net-(D10-Pad2)"
+    "Net-(D11-Pad2)" "Net-(D12-Pad2)" "Net-(D13-Pad2)" "Net-(D14-Pad2)" "Net-(Q5-Pad2)" "Net-(Q6-Pad2)" "Net-(Q7-Pad2)" "/Control/Buzzer"
+    "/Control/B" "/Control/Rgb1" "/Control/Encoder_Push" "/Control/Rgb2" "/Control/Rgb3" "/Control/INYECTORES" "Net-(R9-Pad1)" "Net-(R10-Pad1)"
+    "/Control/R1_OUT" "Net-(R14-Pad1)" "Net-(R15-Pad1)" "/Control/R2_OUT" "/Control/RESET" "/Control/Bomba2" "/Control/Bomba1" "/Control/UART0_RX"
+    "/Control/UART0_TX" "/Control/GPIO22" "/Control/GPIO21" "/Control/GPIO20" "/Control/GPIO17" "/Control/GPIO16" "/Control/GPIO15" "/Control/GPIO14"
+    "/Control/PULSADOR_2" "/Control/PULSADOR_1" "Net-(C11-Pad2)" "Net-(C12-Pad2)" "Net-(C13-Pad2)" "Net-(C14-Pad2)"
+    (clearance_class "CNC")
+    (via_rule "CNC")
+    (rule
+      (width 1000.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
