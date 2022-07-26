@@ -2,7 +2,7 @@
   "board": {
     "active_layer": 31,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -33,10 +33,10 @@
       3,
       4,
       5,
-      6,
       8,
       9,
       10,
+      11,
       12,
       13,
       14,
@@ -62,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "000ffff_80000001",
+    "visible_layers": "ffdffff_ffffffff",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "P_Inyectores_Rpi_pico.kicad_prl",
+    "filename": "Circuito Insoladora con Rele.kicad_prl",
     "version": 3
   },
   "project": {
