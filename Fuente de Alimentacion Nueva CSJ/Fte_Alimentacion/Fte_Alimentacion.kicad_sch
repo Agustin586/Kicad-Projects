@@ -1,0 +1,48 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 73bfe378-1a5e-400c-8c4e-dab9608e7f39)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 25.4 25.4) (size 38.1 20.32) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 562814fe-452f-412c-b47b-2b964aae8ee9)
+    (property "Sheetname" "Potencia_Fte" (at 25.4 24.6884 0) (show_name)
+      (effects (font (size 1.27 1.27) bold italic) (justify left bottom))
+    )
+    (property "Sheetfile" "Potencia_Fte.kicad_sch" (at 25.4 46.3046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Fte_Alimentacion"
+        (path "/73bfe378-1a5e-400c-8c4e-dab9608e7f39" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 87.63 25.4) (size 38.1 20.32) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid b6c2223f-efea-4376-a528-89aa8443decd)
+    (property "Sheetname" "Control" (at 87.63 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Control.kicad_sch" (at 87.63 46.3046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Fte_Alimentacion"
+        (path "/73bfe378-1a5e-400c-8c4e-dab9608e7f39" (page "3"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
